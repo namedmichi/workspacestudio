@@ -1,0 +1,68 @@
+.data{
+    color: rgb(135, 159, 182);
+}
+.head{
+    color: red;
+
+}
+body{
+    background-image: url('back.svg');
+    background-size: 30%;
+}
+
+.Top {
+    size: 300px;
+}
+
+form {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: white;
+
+}
+.lorem {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: white;
+
+}
+iframe {
+    
+    height: 720px;
+    width: 1080px;
+}
+table {
+    font-size: 20px;
+}
+.nav {
+    font-size: 20px;
+
+
+}
+.a {
+    position: relative;
+    top:-10px;
+}
+.schprungmenü {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    bottom: 150px;
+    border: 7px;
+    border-color: black;
+    border-style: solid;
+    width: 400px;
+}
+#schprungmenüt {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    bottom: 150px;
+}
+footer{
+    position: absolute;
+    right: 0px;
+    font-size: 30px;
+}
