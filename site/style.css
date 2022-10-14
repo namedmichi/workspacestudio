@@ -1,0 +1,17 @@
+body {
+
+    background-color: rgb(216, 212, 212);
+  
+}
+.logo {
+    align-self: center;
+}
+.topnav {
+    position: absolute;
+    top: 0px;
+}
+.fotnav {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
