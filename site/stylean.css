@@ -1,0 +1,36 @@
+body {
+ 
+
+    background-color: rgb(216, 212, 212);
+    background-image: url('back.svg');
+  
+}
+.logo {
+    align-self: center;
+}
+.topnav {
+    position: absolute;
+    top: 0px;
+}
+.fotnav {
+    position: absolute;
+    bottom: 0px;
+
+    
+}
+.anmeldung {
+
+
+}
+.center {
+    align-self: center;
+    width: 400px;
+    top: 100px;
+    font-size: 30px;
+    margin: 0 auto;
+}
+.reg{
+    width: 340px;
+    height: 40px;
+    font-size: 30px;
+}
