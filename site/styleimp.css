@@ -1,0 +1,29 @@
+body {
+ 
+
+    background-color: rgb(216, 212, 212);
+    background-image: url('back.svg');
+  
+}
+.logo {
+    align-self: center;
+}
+.topnav {
+    position: absolute;
+    top: 0px;
+}
+.fotnav {
+    position: absolute;
+    bottom: 0px;
+
+    
+}
+
+.sec{
+    
+    
+}
+.impdiv{
+    margin: 0 auto;
+    width: 1200px;
+}
