@@ -20,11 +20,9 @@ body {
 
     
 }
-
-.sec{
-    
+.header {
+    font-size: 60px;
 }
-.impdiv{
-    margin: 0 auto;
-    width: 800px;
+.text {
+    font-size: 30px;
 }

@@ -11,10 +11,12 @@ body {
 .topnav {
     position: absolute;
     top: 0px;
+    font-size: 22px;
 }
 .fotnav {
     position: absolute;
     bottom: 0px;
+    font-size: x-large;
 
     
 }
