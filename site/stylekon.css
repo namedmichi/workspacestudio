@@ -14,7 +14,7 @@ body {
     font-size: 22px;
 }
 .fotnav {
-    position: absolute;
+    position: relative;
     bottom: 0px;
     font-size: x-large;
 
@@ -25,4 +25,16 @@ body {
 }
 .text {
     font-size: 30px;
+}
+.form {
+    
+    align-self: center;
+    width: 400px;
+    font-size: 30px;
+    margin: 0 auto;
+}
+.sub {
+    width: 320px;
+    height: 40px;
+    font-size: 20px;
 }

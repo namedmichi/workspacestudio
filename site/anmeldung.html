@@ -20,14 +20,19 @@
       <a href="/site/haupt.html">Haupt</a>
       <a href="/site/aktuelles.html">Aktuelles</a>
     </nav>
-    <center><h1>Newsletter anmeldung</h1></center>
+    
 
     <div class="center">
       <form class="anmeldung">
-        <label for="Vorname">Vorname:</label>
+
+        <fieldset>
+          <legend><center>Newsletter anmeldung</center></legend>
+         <label for="Vorname">Vorname:</label>
         <input type="Text" name="vorname" /><br />
         <label for="Nachname">Nachname:</label>
         <input type="Text" name="Nachname" /><br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"> <br>
         <label for="plz">PLZ:</label>
         <input type="number" name="PLZ" /><br />
         <label for="Stadt">Stadt:</label>
@@ -38,18 +43,26 @@
         <input type="date" name="Geburtsdatum" /><br />
         <label for="Passwort">Passwort</label>
         <input type="password" name="passwort" /><br />
-        <label for="Geschlecht">Ü18?</label><br />
-        <input type="radio" name="Geschlecht" value="j" />Ja<br />
-        <input type="radio" name="Geschlecht" value="n" />Nein<br />
+        <label for="Alter">Ü18?</label>
+        <select name="Alter" id="Alter">
+          <option value="Ja">Ja</option>
+          <option value="Nein">Nein</option>
+        </select>
+        <br>
+        <label for="Profilbild">Profilbild:</label>
+        <input type="file" name="Profilbild" id="Profilbild">
 
-        <input type="submit" value="Anmelden" class="reg" />
+        <a href=""><input type="submit" value="Anmelden" class="reg" /></a> 
+        </fieldset>
+        
+        
       </form>
     </div>
 
     <footer class="fotnav">
       <nav>
         <a href="/site/impresum.html">Impressum</a>
-        <a href="">Kontakt</a>
+        <a href="/site/kontakt.html">Kontakt</a>
       </nav>
     </footer>
   </body>
