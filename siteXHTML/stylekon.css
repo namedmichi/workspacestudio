@@ -14,30 +14,27 @@ body {
     font-size: 22px;
 }
 .fotnav {
-    position: absolute;
+    position: relative;
     bottom: 0px;
     font-size: x-large;
 
     
 }
-
-.center {
+.header {
+    font-size: 60px;
+}
+.text {
+    font-size: 30px;
+}
+.form {
+    
     align-self: center;
-    width: 440px;
+    width: 400px;
     font-size: 30px;
     margin: 0 auto;
-    
-    
-    
 }
-.reg{
-    width: 440px;
+.sub {
+    width: 320px;
     height: 40px;
-    font-size: 30px;
-    
-}
-select {
-    width: 120px;
-    height: 30px;
- 
+    font-size: 20px;
 }

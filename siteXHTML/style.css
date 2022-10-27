@@ -1,0 +1,77 @@
+body {
+
+    background-color: rgb(216, 212, 212);
+    background-image: url('back.svg');
+  
+}
+.logo {
+    align-self: center;
+}
+.topnav {
+    position: absolute;
+    top: 0px;
+    font-size: 22px;
+}
+.fotnav {
+    position: relative;
+    font-size: x-large;
+    
+}
+.login {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 60px;
+    width: 200px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.htext{
+   
+    background-color: white;
+    width: 900px;
+    height: 2000px;
+    margin: 0 auto;
+}
+.artikel{
+    text-align: center;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    
+}
+#Artikel{
+    position: relative;
+    left: 100px;
+    top: 40px;
+    width: 700px;
+    height: 500px;
+}
+#Artikel2{
+    position: relative;
+    left: 100px;
+    top: 80px;
+    width: 700px;
+    height: 500px;
+}
+#Artikel3{
+    position: relative;
+    left: 100px;
+    top: 120px;
+    width: 700px;
+    height: 500px;
+}
+.arthead{
+    position: relative;
+    
+}
+#arthead1{
+    top: 30px;
+}
+#arthead2{
+    top: 60px;
+}
+#arthead3{
+    top: 100px;
+}

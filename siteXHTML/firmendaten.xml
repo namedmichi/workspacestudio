@@ -1,0 +1,57 @@
+<Kunden>
+	<Kunde>
+		<firma>
+			Marias Cafe
+		</firma>
+		<kontakt>
+			Maria Meier
+		</kontakt>
+		<stadt>
+			Rosenheim
+		</stadt>
+	</Kunde>
+	<Kunde>
+		<firma>
+			Maschienbau Maier
+		</firma>
+		<kontakt>
+			Roland Maier
+		</kontakt>
+		<stadt>
+			Stuttgard
+		</stadt>
+	</Kunde>
+	<Kunde>
+		<firma>
+			Schreinerei Müller
+		</firma>
+		<kontakt>
+			Hans Müller
+		</kontakt>
+		<stadt>
+			Traunstein
+		</stadt>
+	</Kunde>
+	<Kunde>
+		<firma>
+			Pizza Palast
+		</firma>
+		<kontakt>
+			Mario Rovelli
+		</kontakt>
+		<stadt>
+			Rosenheim
+		</stadt>
+	</Kunde>
+	<Kunde>
+		<firma>
+			Weinkellerei Münster
+		</firma>
+		<kontakt>
+			Friedrich Speer
+		</kontakt>
+		<stadt>
+			Münster
+		</stadt>
+	</Kunde>
+</Kunden>
