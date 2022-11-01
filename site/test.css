@@ -59,24 +59,3 @@ body {
     
     font-weight: bolder;
 }
-
-.center {
-    align-self: center;
-    width: 440px;
-    font-size: 30px;
-    margin: 0 auto;
-    
-    
-    
-}
-.reg{
-    width: 440px;
-    height: 40px;
-    font-size: 30px;
-    
-}
-select {
-    width: 120px;
-    height: 30px;
- 
-}
