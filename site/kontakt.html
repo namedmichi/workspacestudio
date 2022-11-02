@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="stylenav.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylekon.css" media="screen" />
     <title>Kontakt</title>
   </head>
@@ -23,16 +24,16 @@
       </div>
     </nav>
 
-    <div class="form">
+    <div class="center">
       <form>
-        <fieldset class="center">
+        <fieldset class="form">
           <legend>Ihre Nachricht</legend>
-          <label for="Name">Ihr Name:</label>
-          <input type="text" name="Name" id="Name" /> <br />
-          <label for="Email">Email:</label>
-          <input type="email" name="Email" id="Email" /><br />
-          <label for="Anliegen">Ihr Anliegen:</label>
-          <select name="Anliegen" id="Anliegen">
+          <label for="Name" class="label">Ihr Name:</label>
+          <input type="text" name="Name" id="Name" class="input" /> <br />
+          <label for="Email" class="label">Email:</label>
+          <input type="email" name="Email" id="Email" class="input" /><br />
+          <label for="Anliegen" class="label">Ihr Anliegen:</label>
+          <select name="Anliegen" id="Anliegen" class="inputO">
             <option value="Allgemein">Allgemein</option>
             <option value="Newsletter">Newsletter</option>
             <option value="Probleme">Probleme</option>
@@ -40,13 +41,14 @@
             <option value="Rechtliches">Rechtliches</option>
           </select>
           <br />
-          <label for="Nachricht">Nachricht hier eingeben:</label>
+          <label for="Nachricht" class="label">Nachricht hier eingeben:</label>
 
           <textarea
             name="Nachricht"
             id="Nachricht"
             cols="40"
             rows="10"
+            class="textA"
           ></textarea>
           <br />
           <input class="sub" type="submit" value="Abschicken" />
@@ -55,11 +57,11 @@
     </div>
 
     <main>
-      <div>
+      <div class="text">
         <center>
           <h2 class="header">Kontakt</h2>
-          <p class="text">Kundenservice:</p>
-          <p class="text">
+          <p>Kundenservice:</p>
+          <p>
             E-Mail:
             <a href="mailto:info@chiemgau48.net">info@chiemgau48.net</a><br />
             Telefon: 048 - 6 48 90<br /><br />
@@ -67,7 +69,6 @@
         </center>
       </div>
     </main>
-
     <footer class="fotnav">
       <nav>
         <a href="/site/impresum.html" class="fotText">Impressum</a>
