@@ -8,37 +8,114 @@ body {
     position: static;
 }
 .wrapper{
-    background-color: rgb(253, 0, 0, 0.5);
+    
     width: 100%;
     
     display: flex;
     justify-content: center;
 }
 .wrapper-box{
-    background-color: blue;
+    background-color: white;
     width: 60%;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: black;
+    border-width: 1px;
     
+}
+
+.container-ueber{
+    display: grid;
+  
+}
+.ueber{
+    align-self: center;
+    justify-self: center;
+    font-size: 2.2vmin;
+}
+.stand{
+ text-align: end;
+}
+.stand-text{
+  font-size: 1.9vmin;
 }
 .video{
     width: 40vw;
     height: 50vh;
 }
+
 .text{
     font-size: 2vmin;
     text-align: justify;
+
 }
-
-
-
+.text::first-letter{
+   float: left;
+   font-size: 10vmin;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.firstLet{
+    font-weight: 600;
+}
+.news{
+    width: 40%;
+}
+.container-artikel{
+    display: flex;
+    flex-direction: column;
+}
+.artikel-header-list{
+    display: flex;
+    flex-direction: row;
+   
+}
+.artikel-header-container{
+    flex: 50%;
+}
+.artikel-header{
+    font-size: 3vmin;
+}
+.artikel-link-list{
+    display: flex;
+    flex: 100%;
+}
+.artikel-link{
+    flex: 50%;
+    height: 30vmin;
+    margin: 10px;
+    background-color: black;
+}
 
 
 @media screen and (max-height: 800px)  {
     .text{
         font-size: 15px;
     }
+    .text::first-letter{
+      
+        font-size: 30px;
+        
+     }
+     .stand-text{
+        font-size: 12px;
+      }
+      .artikel-header{
+        font-size: 24px;
+    }
 }
 @media screen and (max-width: 800px)  {
     .text{
         font-size: 15px;
+    }
+    .text::first-letter{
+        
+        font-size: 30px;
+        
+     }
+     .stand-text{
+        font-size: 12px;
+      }
+      .artikel-header{
+        font-size: 24px;
     }
 }
