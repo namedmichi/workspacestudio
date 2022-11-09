@@ -1,14 +1,4 @@
-:root {
-    --color-primary: #3a00ff;
-    --color-primary-alt: #6f6ffd;
-    --color-secondary: #d42257;
-    --color-background: #d2fbf7;
-    --color-text: #412d86;
-    --color-light: #fff;
-    --color-anchor: #3a00ff;
-    --font-family: "Baloo 2", sans-serif;
-  }
-  * {
+* {
     box-sizing: border-box;
     font-family: ’Lato’, sans-serif;
     margin: 0; 
@@ -81,7 +71,6 @@ footer a:hover {
 }
 .ft{
     justify-self: end;
-    
 }
 .ft-title {
     color: #fff;
@@ -118,16 +107,16 @@ body {
         justify-content: space-evenly;
     }
 }
-footer form {
+form {
     display: flex;
     flex-wrap: wrap;
 }
-footer input[type="email"] {
+input[type="email"] {
     border: 0;
     padding: 0.62rem;
     margin-top: 0.31rem;
 }
-footer input[type="submit"] {
+input[type="submit"] {
     background-color: #1166e6;
     color: #fff;
     cursor: pointer;

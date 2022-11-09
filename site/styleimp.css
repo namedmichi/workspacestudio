@@ -1,7 +1,7 @@
 body {
 
-    background-color: rgb(216, 212, 212);
-    background-image: url('back.svg');
+
+    font-family: var(--font-family);
   
 }
 
@@ -12,7 +12,27 @@ body {
 .impdiv{
     margin: 0 auto;
     width: 45vmin;
-    height: 80vmin;
     text-align: center;
     font-size: 2vmin;
+    margin-bottom: 10.6rem;
+}
+@media screen and (max-height: 800px)  {
+    p{
+        font-size: 15px;
+    }
+
+}
+      h2{
+        font-size: 24px;
+    }
+
+@media screen and (max-width: 800px)  {
+    p{
+        font-size: 15px;
+    }
+
+
+      h2{
+        font-size: 24px;
+    }
 }

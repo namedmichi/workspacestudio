@@ -19,12 +19,7 @@ body {
     width: 50%;
     
 }
-h1{
-    font-size: 2rem;
-}
-.head2{
-    font-size: 1.4rem;
-}
+
 .container-ueber{
     display: grid;
   
@@ -67,7 +62,6 @@ h1{
 .container-artikel{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
 }
 .artikel-header-list{
     display: flex;

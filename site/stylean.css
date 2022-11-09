@@ -1,9 +1,3 @@
-body {
-
-    background-color: rgb(216, 212, 212);
-    background-image: url('back.svg');
-  
-}
 
 
 .center {
@@ -11,9 +5,13 @@ body {
     width: 440px;
     font-size: 30px;
     margin: 0 auto;
+    margin-bottom: 14rem;
     
     
     
+}
+.anm{
+    font-size: 2rem;
 }
 .reg{
     width: 440px;
