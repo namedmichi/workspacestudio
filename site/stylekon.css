@@ -1,11 +1,11 @@
 body {
 
-    background-color: rgb(216, 212, 212);
-    background-image: url('back.svg');
+
+    font-family: var(--font-family);
   
 }
 .fotnav{
-    position: absolute;
+    position: static;
 }
 
 .header {
@@ -14,7 +14,7 @@ body {
 .text {
     font-size: 3vmin;
     width: 100%;
-    height: 40vmin;
+    height: 18vmin;
 }
 .form {
     position: relative;
@@ -25,11 +25,11 @@ body {
 }
 
 .input{
-    width: 20vmin;
+    width: 17vmin;
     
 }
 .inputO{
-    width: 10vmin;
+    width: 14vmin;
 }
 .textA{
     width: 33vmin;
@@ -41,3 +41,4 @@ body {
     height: 4vmin;
     font-size: 2vmin;
 }
+
