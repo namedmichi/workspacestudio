@@ -3,54 +3,67 @@
     font-family: ’Lato’, sans-serif;
     margin: 0; 
     padding: 0;
-    font-size: 1.9vmin;
-}
-body {
 
-    background-color: white;
-
-  
-}
-.logo {
-    align-self: center;
-    margin-left: 15px;
-    width: 30vmin;
 }
 
-.nav{
+nav{
+    background-color: rgb(202, 202, 202);
+
     
-    left: 1px;
-    
-    top: 0px;
-    width: 25vmin;
-    height: 4vmin;
-    position: absolute;
-    
+}
+.nv{
+    display: flex;
 
+
+    height: 8vh;
+    margin-bottom: 2vh;
+    
 }
 
-.NavText {
-    top: 3px;
+.nv-leiste{
+
+    display: flex;
+    align-content: center;
+
+    
+    
+}
+.nv-haupt{
+    padding-right: 1rem;
+    font-size: 2.9vmin;
     font-family: var(--font-family);
-    font-size: 2.5vmin;
-    text-decoration: none;
+    z-index: 1;
+}
+.nv-aktuell{
+    font-family: var(--font-family);
+    font-size: 2.9vmin;
+    z-index: 1;
+}
+
+
+
+.nv-text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
+}
+
+.nv-logo{
     position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    height: 10vmin;
+    margin-top: 0.5vh;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    z-index: 0;
+
 }
-.NavText:hover{
-    
-    font-weight: bolder;
+.logo{
+    position: relative;
+
+    height: 7vh;
 }
-#HaText {
-    
-}
-#AkText {
-    left: 13vmin;
-}
-.NavText:hover{
-    
-    font-weight: bolder;
-}
+
 
 
 footer ul {
@@ -66,11 +79,20 @@ footer a {
     text-decoration: none;
     color: #eee;
 }
-footer a:hover {
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
     text-decoration: underline;
+    text-decoration-color: black;
 }
 .ft{
-    justify-self: end;
+    position: relative;
+    justify-self: flex-end;
+    align-self: flex-end;
+    bottom: 0px;
+
 }
 .ft-title {
     color: #fff;
@@ -78,13 +100,7 @@ footer a:hover {
     font-size: 1.375rem;
     padding-bottom: 0.62rem;
 }
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    font-family: var(--font-family);
-    height: 100%;
-}
+
 .container {
     flex: 1;    
 }
@@ -135,7 +151,7 @@ input[type="submit"] {
 }
 .ft-social-list li {
     margin: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 2.34vmin;
 }
 .ft-legal {
     padding: 0.93rem 1.87rem;
@@ -150,7 +166,7 @@ input[type="submit"] {
     margin: 0.12rem 0.62rem;
     white-space: nowrap;
 }
-
+/* one before the last child */
 .ft-legal-list li:nth-last-child(2) {
-    flex: 1;     
+    flex: 1;       /* same as flex-grow: 1; */
 }

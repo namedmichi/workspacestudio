@@ -3,22 +3,87 @@
     font-family: ’Lato’, sans-serif;
     margin: 0; 
     padding: 0;
-    font-size: 1.9vmin;
+
 }
+
+
+nav{
+    background-color: rgb(202, 202, 202);
+
+    
+}
+.nv{
+    display: flex;
+
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 2vh;
+}
+
+.nv-leiste{
+
+    display: flex;
+    align-content: center;
+
+    
+    
+}
+.nv-haupt{
+    padding-right: 1rem;
+    font-size: 2.9vmin;
+    font-family: var(--font-family);
+}
+.nv-aktuell{
+    font-family: var(--font-family);
+    font-size: 2.9vmin;
+}
+
+
+
+.nv-text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+.nv-logo{
+    position: absolute;
+    width: 100vw;
+    margin: 0 auto;
+    height: 10vmin;
+    margin-top: 0.5vh;
+
+}
+.logo{
+    position: relative;
+
+    height: 7vh;
+}
+
+
+
+
+
+
+
+
 
 .impdiv{
     margin: 0 auto;
     width: 45vmin;
-
+    font-size: 2vmin;
     text-align: center;
-    font-size: 1rem;
-    margin-bottom: 7.4rem;
+
+    margin-bottom: 9.4vh;
+
+
 }
 .h1{
     font-size: 2.3rem;
     margin-bottom: 1.7rem;
 }
-ul {
+
+
+footer ul {
     list-style: none;
     padding-left: 0;
 }
@@ -31,11 +96,20 @@ footer a {
     text-decoration: none;
     color: #eee;
 }
+
+a:link {
+    text-decoration: none;
+}
 a:hover {
     text-decoration: underline;
+    text-decoration-color: black;
 }
 .ft{
-    justify-self: end;
+    position: relative;
+    justify-self: flex-end;
+    align-self: flex-end;
+    bottom: 0px;
+
 }
 .ft-title {
     color: #fff;
@@ -43,13 +117,7 @@ a:hover {
     font-size: 1.375rem;
     padding-bottom: 0.62rem;
 }
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    font-family: var(--font-family);
-    height: 100%;
-}
+
 .container {
     flex: 1;    
 }
@@ -100,7 +168,7 @@ input[type="submit"] {
 }
 .ft-social-list li {
     margin: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 2.34vmin;
 }
 .ft-legal {
     padding: 0.93rem 1.87rem;

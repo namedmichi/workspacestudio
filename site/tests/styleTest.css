@@ -3,10 +3,15 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    height: 5.5%;
-    width: 11%;
+    height: 8vh;
+    width: 12vw;
     font-size: 2vmin;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:  rgb(202, 202, 202);
+    border: 2px;
+    padding: 2px;
+    border-color: rgb(156, 156, 156);
+    border-style: solid;
 }
 .login:hover {
     background-color: rgb(180, 180, 180);
@@ -29,11 +34,14 @@
 .wrapper{
     background-color: white;
     display: flex;
-    width: 50%;
-    
+    width: 40%;
+    margin-bottom: 1.5rem;
     
 
     
+}
+.über{
+    font-size: 2rem;
 }
 .artikel{
     
@@ -45,7 +53,40 @@
     
 }
 .header{
-  
-    height: 1%;
+    font-size: 1.5rem;
     text-align: center;
+    
+}
+.artikel{
+    font-family: var(--font-family);
+    padding: 30px;
+    margin: 15px;
+}
+.text{
+    color: black;
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+.artikel:hover{
+   background-color: rgba(0, 0, 0, 0.233);
+}
+@media screen and (max-height: 800px)  {
+    .text{
+        font-size: 15px;
+    }
+
+}
+      .header{
+        font-size: 24px;
+    }
+
+@media screen and (max-width: 800px)  {
+    .text{
+        font-size: 15px;
+    }
+
+
+      .header{
+        font-size: 24px;
+    }
 }
