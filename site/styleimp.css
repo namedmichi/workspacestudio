@@ -1,13 +1,3 @@
-body {
-
-
-    font-family: var(--font-family);
-  
-}
-
-.fotnav{
-    position: absolute;
-}
 
 .impdiv{
     margin: 0 auto;
@@ -16,14 +6,14 @@ body {
     font-size: 2vmin;
     margin-bottom: 10.6rem;
 }
-@media screen and (max-height: 800px)  {
+@media screen and (max-height: 500px)  {
     p{
         font-size: 15px;
     }
 
 }
       h2{
-        font-size: 24px;
+        font-size: 20px;
     }
 
 @media screen and (max-width: 800px)  {
@@ -33,6 +23,6 @@ body {
 
 
       h2{
-        font-size: 24px;
+        font-size: 20px;
     }
 }
