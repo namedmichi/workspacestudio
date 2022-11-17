@@ -1,4 +1,12 @@
-
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.ft{
+    margin-top: auto;
+    width: 100%;
+}
 .impdiv{
     margin: 0 auto;
     width: 45vmin;
@@ -6,15 +14,19 @@
     font-size: 2vmin;
     margin-bottom: 10.6rem;
 }
+h2{
+    font-size: 3vmin;
+}
+
 @media screen and (max-height: 500px)  {
     p{
         font-size: 15px;
     }
-
-}
-      h2{
-        font-size: 20px;
+    h2{
+            font-size: 20px;
     }
+}
+      
 
 @media screen and (max-width: 800px)  {
     p{

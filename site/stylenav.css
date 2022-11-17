@@ -7,12 +7,14 @@
     --color-light: #fff;
     --color-anchor: #3a00ff;
     --font-family: "Baloo 2", sans-serif;
+    
   }
   * {
     box-sizing: border-box;
     font-family: ’Lato’, sans-serif;
     margin: 0; 
     padding: 0;
+
 
 }
 
@@ -21,11 +23,28 @@ nav{
 
     
 }
+@media screen and (max-width: 600px)  {
+    .nv-leiste{
+        flex-direction: column;
+    }
+    .nv-haupt{
+
+        flex: 100;
+    }
+    .nv-aktuell{
+        flex: 100;
+
+    }
+
+
+}
+
 .nv{
     display: flex;
-
+    font-size: 1vmin;
 
     height: 8vh;
+    min-height: 50px;
     margin-bottom: 2vh;
     
 }
@@ -34,20 +53,21 @@ nav{
 
     display: flex;
     align-content: center;
+    
 
     
     
 }
 .nv-haupt{
     padding-right: 1rem;
-    font-size: 2.9vmin;
+    font-size: 3em;
     font-family: var(--font-family);
     z-index: 1;
 
 }
 .nv-aktuell{
     font-family: var(--font-family);
-    font-size: 2.9vmin;
+    font-size: 3em;
     z-index: 1;
 
 }
@@ -65,15 +85,14 @@ nav{
     margin: 0 auto;
     height: 10vmin;
     margin-top: 0.5vh;
-    padding-left: 30vh;
-    padding-right: 30vh;
+
     z-index: 0;
 
 }
 .logo{
     position: relative;
 
-    height: 7vh;
+    height: 9vh;
 }
 
 
@@ -86,6 +105,7 @@ footer {
     background-color: #555;
     color: #bbb;
     line-height: 1.5;
+
 }
 footer a {
     text-decoration: none;

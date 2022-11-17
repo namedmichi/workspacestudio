@@ -2,8 +2,12 @@ body {
 
 
     font-family: var(--font-family);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   
 }
+
 .fotnav{
     position: static;
 }
@@ -22,6 +26,7 @@ body {
     width: 3vmin;
     font-size: 3vmin;
     margin: 0 auto;
+    
 }
 
 .input{
@@ -41,4 +46,44 @@ body {
     height: 4vmin;
     font-size: 2vmin;
 }
-
+.ft{
+    margin-top: auto;
+    width: 100%;
+}
+@media screen and (max-width: 700px)  {
+    .header {
+        font-size: 35px;
+    }
+    .text {
+        font-size: 25px;
+        width: 100%;
+        height: 18vmin;
+    }
+    .form {
+        position: relative;
+        align-self: center;
+        width: 240px;
+        font-size: 19px;
+        margin: 0 auto;
+        
+    }
+    
+    .input{
+        width: 120px;
+        
+    }
+    .inputO{
+        width: 110px;
+    }
+    .textA{
+        width: 236px;
+        height: 130px;
+    }
+    
+    .sub {
+        width: 236px;
+        height: 30px;
+    font-size: 20px;
+    }
+    
+}
