@@ -15,15 +15,15 @@ body {
 .wrapper-box{
     background-color: var(--color-light);
     width: 50%;
-    min-width: 500px;
+    min-width: 410px;
 
     
 }
 h1{
-    font-size: 5vmin;
+    font-size: 3.8rem;
 }
 .head2{
-    font-size: 4vmin;
+    font-size: 2.8rem;
 }
 .container-ueber{
     display: grid;
@@ -43,20 +43,21 @@ h1{
 .video{
     width: 40vw;
     height: 50vh;
+    min-width: 300px;
 }
 .unter-video{
     margin-top: 30px;
 }
 .text{
-    font-size: 2vmin;
+    font-size: 1.3rem;
     text-align: justify;
     font-family: var(--font-family);
-    padding: 40px;
+    padding: 20px;
 
 }
 .text::first-letter{
    float: left;
-   font-size: 8vmin;
+   font-size: 5rem;
    font-family: var(--font-family);
    
 }
@@ -64,65 +65,60 @@ h1{
     font-weight: 600;
 }
 .news{
-    width: 40%;
+    width: 80%;
+    height: 300px;
 }
 .container-artikel{
     display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-.artikel-header-list{
-    display: flex;
     flex-direction: row;
-   
+    margin-bottom: 30px;
+    width: 100%;
+    height: 20rem;
 }
-.artikel-header-container{
-    flex: 50%;
+.artikeln{
+    flex: 50;
+    display: flex;
+    flex-direction: column;
+   
 }
 .artikel-header{
     font-size: 3vmin;
 }
-.artikel-link-list{
-    display: flex;
-    flex: 100%;
-}
+
 .artikel-link{
     flex: 50%;
-    height: 30vmin;
+    height: 30%;
     margin: 10px;
     background-color: black;
 }
 
 
-@media screen and (max-height: 800px)  {
-    .text{
-        font-size: 15px;
-    }
-    .text::first-letter{
-      
-        font-size: 30px;
-        
-    }
-    .stand-text{
-        font-size: 12px;
-      }
-    .artikel-header{
-        font-size: 24px;
-    }
-}
+
 @media screen and (max-width: 800px)  {
+    h1{
+        font-size: 60px;
+    }
     .text{
-        font-size: 15px;
+        font-size: 19px;
     }
     .text::first-letter{
         
-        font-size: 30px;
+        font-size: 50px;
         
     }
     .stand-text{
-        font-size: 12px;
+        font-size: 18px;
     }
     .artikel-header{
         font-size: 24px;
     }
+    .container-artikel{
+        flex-direction: column;
+    }
+    .artikel-link{
+        width: 70%;
+        margin: 0 auto;
+    }
+
 }
+
