@@ -16,6 +16,7 @@
     padding: 0;
 
 
+
 }
 
 nav{
@@ -23,9 +24,9 @@ nav{
 
     
 }
-@media screen and (max-width: 600px)  {
+@media screen and (max-width: 680px)  {
     .nv-leiste{
-        flex-direction: column;
+       width: 100%;
     }
     .nv-haupt{
 
@@ -33,6 +34,12 @@ nav{
     }
     .nv-aktuell{
         flex: 100;
+        
+
+        justify-self: flex-end;
+        text-align: end;
+
+
 
     }
 
@@ -43,9 +50,9 @@ nav{
     display: flex;
     font-size: 1vmin;
 
-    height: 8vh;
+    height: 6rem;
     min-height: 50px;
-    margin-bottom: 2vh;
+    margin-bottom: 1rem;
     
 }
 
@@ -60,14 +67,14 @@ nav{
 }
 .nv-haupt{
     padding-right: 1rem;
-    font-size: 3em;
+    font-size: 2.7em;
     font-family: var(--font-family);
     z-index: 1;
 
 }
 .nv-aktuell{
     font-family: var(--font-family);
-    font-size: 3em;
+    font-size: 2.7em;
     z-index: 1;
 
 }
@@ -83,16 +90,16 @@ nav{
     position: absolute;
     width: 100%;
     margin: 0 auto;
-    height: 10vmin;
-    margin-top: 0.5vh;
+    height: 2rem;
+   
 
     z-index: 0;
 
 }
 .logo{
     position: relative;
-
-    height: 9vh;
+    margin-top: 0.5rem;
+    height: 5rem;
 }
 
 
@@ -198,9 +205,9 @@ footer input[type="submit"] {
     margin: 0.12rem 0.62rem;
     white-space: nowrap;
 }
-/* one before the last child */
+
 .ft-legal-list li:nth-last-child(2) {
-    flex: 1;       /* same as flex-grow: 1; */
+    flex: 1;       
 }
 
 @media screen and (max-height: 800px)  {
@@ -225,4 +232,30 @@ footer input[type="submit"] {
     }
 
 
+}
+@media screen and (max-width: 800px)  {
+
+    .logo{
+        margin-top: 0.75rem;
+        height: 4.5rem;
+    }
+
+    
+}
+@media screen and (max-width: 600px)  {
+
+    .logo{
+        margin-top: 1rem;
+        height: 4rem;
+    }
+    .nv-haupt{
+        font-size: 20px;
+    
+    }
+    .nv-aktuell{
+        font-size: 20px;
+    
+    }
+    
+    
 }

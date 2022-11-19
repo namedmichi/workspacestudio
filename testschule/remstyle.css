@@ -1,0 +1,22 @@
+html {
+
+  
+  }
+   #top-div {
+    padding: 1rem;
+    font-size: 2rem;
+    border: 1px solid red;
+
+    background-color: rgba(255, 40, 40, 0.5);
+  } 
+  .div {
+    background-color: rgba(93, 247, 4, 0.5);
+    padding: 2em;
+    font-size: 3em;
+    border: 1px solid black;
+  }
+  .in-div{
+    font-size: 2rem;
+    background-color: rgba(0, 0, 255, 0.452);
+  }
+  

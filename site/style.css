@@ -1,11 +1,20 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.ft{
+    margin-top: auto;
+    width: 100%;
+}
 
 .login {
     position: absolute;
     top: 0px;
     right: 0px;
-    height: 8vh;
-    width: 12vw;
-    font-size: 2vmin;
+    height: 7rem;
+    width: 13%;
+    font-size: 1.7rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color:  rgb(202, 202, 202);
     border: 2px;
@@ -17,12 +26,33 @@
     background-color: rgb(180, 180, 180);
     
 }
-
-.fotnav{
-    position: relative;
-    bottom: 0px;
+.logo{
+    margin-top: 1rem;
 }
 
+@media screen and (max-width: 680px)  {
+    .nv-leiste{
+
+       flex-direction: column;
+    }
+    .nv-haupt{
+
+        flex: 100;
+    }
+    .nv-aktuell{
+        flex: 100;
+        justify-self: flex-start;
+        text-align: start;
+
+
+
+    }
+    .ft-social-list li{
+        font-size: 20px;
+    }
+
+
+}
 
 .wrapper-über{
     
@@ -36,6 +66,8 @@
     background-color: white;
     display: flex;
     width: 40%;
+    max-width: 90ch;
+    min-width: 45ch;
     margin-bottom: 1.5rem;
     
 
@@ -81,6 +113,15 @@
         font-size: 24px;
     }
 
+
+@media screen and (max-width: 1200px)  {
+    .login{
+        font-size: 1.1rem;
+    }
+}
+
+
+
 @media screen and (max-width: 800px)  {
     .text{
         font-size: 15px;
@@ -90,4 +131,35 @@
       .header{
         font-size: 24px;
     }
+    .login{
+        font-size: 0.8rem;
+    }
+    .logo{
+        margin-top: 1.5rem;
+        height: 4rem;
+    }
+
+    
 }
+@media screen and (max-width: 600px)  {
+
+    .login{
+        font-size: 0.8rem;
+        width: 20%;
+    }
+    .logo{
+        margin-top: 2rem;
+        height: 3rem;
+    }
+    .nv-haupt{
+        font-size: 20px;
+    
+    }
+    .nv-aktuell{
+        font-size: 20px;
+    
+    }
+    
+    
+}
+

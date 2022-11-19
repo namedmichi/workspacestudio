@@ -1,4 +1,12 @@
-
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.ft{
+    margin-top: auto;
+    width: 100%;
+}
 
 .center {
     align-self: center;
