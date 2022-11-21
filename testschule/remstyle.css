@@ -1,7 +1,7 @@
 * {
 
 }
-.top-div {
+.großeltern {
   max-width: 60%;
   padding: 1rem;
   font-size: 2rem;
@@ -9,13 +9,13 @@
 
   background-color: rgba(255, 40, 40, 0.5);
 } 
-.div {
+.eltern {
   background-color: rgba(93, 247, 4, 0.5);
   padding: 1em;
   font-size: 2em;
   border: 1px solid black;
 }
-.in-div{
+.kind{
   font-size: 2rem;
   background-color: rgba(0, 0, 255, 0.452);
 }
