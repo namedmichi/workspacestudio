@@ -16,6 +16,7 @@ body {
     background-color: var(--color-light);
     width: 50%;
     min-width: 410px;
+    max-width: 100ch;
 
     
 }
@@ -118,6 +119,9 @@ h1{
     .artikel-link{
         width: 70%;
         margin: 0 auto;
+    }
+    h1{
+        font-size: 3rem;
     }
 
 }
