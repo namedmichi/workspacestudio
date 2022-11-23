@@ -5,20 +5,16 @@ body {
     
 }
 
-.wrapper{
-    
-    width: 100%;
-    
+.wrapper{  
+    width: 100%; 
     display: flex;
     justify-content: center;
 }
 .container{
-    background-color: var(--color-light);
     width: 50%;
     min-width: 60ch;
     max-width: 100ch;
 
-    
 }
 h1{
     font-size: 3.8rem;
