@@ -25,22 +25,13 @@ nav{
     
 }
 @media screen and (max-width: 680px)  {
-    .nv-leiste{
-       width: 100%;
-    }
     .nv-haupt{
-
         flex: 100;
     }
     .nv-aktuell{
         flex: 100;
-        
-
         justify-self: flex-end;
         text-align: end;
-
-
-
     }
 
 
@@ -57,7 +48,7 @@ nav{
 }
 
 .nv-leiste{
-
+    width: 100%;
     display: flex;
     align-content: center;
     

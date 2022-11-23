@@ -15,7 +15,7 @@ body {
 .container{
     background-color: var(--color-light);
     width: 50%;
-    min-width: 410px;
+    min-width: 60ch;
     max-width: 100ch;
 
     
@@ -53,7 +53,7 @@ h1{
     font-size: 1.3rem;
     text-align: justify;
     font-family: var(--font-family);
-    padding: 20px;
+    padding: 50px;
 
 }
 .text::first-letter{
