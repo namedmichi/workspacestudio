@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
 }
-.wrapper-box{
+.container{
     background-color: var(--color-light);
     width: 50%;
     min-width: 410px;
