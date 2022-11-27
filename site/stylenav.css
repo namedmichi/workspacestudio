@@ -39,7 +39,7 @@ nav{
 
 .nv{
     display: flex;
-    font-size: 1vmin;
+    font-size: 0.6rem;
 
     height: 6rem;
     min-height: 50px;
