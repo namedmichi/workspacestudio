@@ -12,11 +12,12 @@ body {
 }
 .container{
     width: 50%;
-    min-width: 40ch;
+    min-width: 55ch;
     max-width: 100ch;
 
 }
 h1{
+    padding: 1.5rem;
     font-size: 3.8rem;
 }
 .head2{
@@ -33,6 +34,7 @@ h1{
 }
 .stand{
  text-align: end;
+ padding-right: 1rem;
 }
 .stand-text{
   font-size: 1rem;
