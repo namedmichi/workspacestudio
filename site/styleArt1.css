@@ -12,7 +12,7 @@ body {
 }
 .container{
     width: 50%;
-    min-width: 55ch;
+    min-width: 45ch;
     max-width: 100ch;
 
 }
