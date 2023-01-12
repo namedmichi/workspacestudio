@@ -1,0 +1,92 @@
+body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: 600;
+}
+
+
+/*Header*/
+nav{
+    display: flex;
+    background-color: rgb(73, 132, 151);
+    padding: 30px;
+}
+
+nav img{
+    margin-left: auto;
+}
+.menüL{
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+
+
+/* Main */
+main{
+    
+}
+.content{
+    background-color: rgb(157, 173, 173);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+table{
+    border: 4px black solid;
+    font-size: 1.8rem;
+    border-collapse: collapse;
+}
+th, td{
+    border: 4px black solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+form{
+    font-size: 1.3rem;
+}
+input{
+    width: 9rem;
+}
+
+h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.txt {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+
+
+/*Footer*/
+
+footer{
+    background-color: rgb(133, 125, 133);
+    font-size: 2rem;
+    padding: 30px;
+    margin-top: auto;
+    display: flex;
+}
+.fotL{
+    padding: 0 10px;
+}
