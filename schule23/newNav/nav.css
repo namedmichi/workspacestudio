@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: lightgray;
+}
+.left-float{
+    float: left;
+}
+.right-float{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    font-size: 30px;
+    background-color: #333;
+    overflow: hidden;
+
+}
+nav li{
+    list-style: none;
+    margin-right: 9px;
+    color: white;
+    background-color: #333;
+    padding: 7px;
+    text-transform: uppercase;
+}
+nav li:first-child{
+    margin-left: -30px;
+}
+nav li:hover{
+    background-color: rgb(77, 77, 77);
+}
+nav li:nth-last-child(2){
+    margin-right: 15px;
+    margin-left: 10px;
+} 
