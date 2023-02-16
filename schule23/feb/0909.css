@@ -1,0 +1,37 @@
+
+
+p {
+    background-color: dodgerblue;
+    padding: 20px;
+    color: white;
+}
+  
+.pop:hover p {
+    background-color: red;
+    cursor: crosshair;
+}
+
+p:first-child {
+    color: blue;
+}
+.par p:nth-child(2) {
+    background-color: orange;
+}
+.par p:last-child{
+    background-color: brown;
+}
+li{
+    list-style: none;
+}
+li::before {
+    content: "\2193";
+}
+li::after {
+    background-image: url(https://webentwicklerkurs.de/wp-content/uploads/2022/09/CSS-Logo-1024x1024.png);
+    background-size: 40px 40px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    content: " ";
+    
+}
