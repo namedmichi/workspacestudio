@@ -1,0 +1,24 @@
+body {
+    gap: 5px 5px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+main{
+    background-color: red;
+    height: 700px;
+}
+aside{
+    height: 700px;
+    background-color: green;
+}
+
+@media screen and (max-width: 680px) {
+    body { 
+        
+        grid-template-columns: 1fr;
+        
+    }
+    
+}
