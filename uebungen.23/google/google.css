@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #202124;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.container{
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pic-con{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+}
+.pic-con img{
+    margin-top: 210px;
+}
+.search{
+    width: 100%;
+
+}
+.bar-container{
+    margin: 0 auto;
+    padding-top: 0px;
+    width: 100%;
+    max-width: 584px;
+}   
+.bar{
+    display: flex;
+    border-style: solid;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 24px;
+    border: 1px solid #5f6368;
+    box-shadow: none;
+    height: 44px;
+    width: auto;
+    max-width: 584px;
+
+}
+.bar:hover{
+    background-color: #303134;
+}
+span{
+        margin-left: 15px;
+        height: 20px;
+        line-height: 20px;
+        width: 20px;
+    
+}
+.lupe{
+    margin-right: 9px;
+}
+svg {
+    color: #9aa0a6;
+    fill: currentColor;
+    display: block;
+    height: 100%;
+
+}
+.cam{
+    margin-right: 13px;
+}
+.search-input{
+    height: 34px;
+    font-size: 16px;
+    flex: 100%;
+    background-color: transparent;
+    border: none;
+    margin-top: -40px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    color: #e8eaed;
+    word-wrap: break-word;
+    display: flex;
+    -webkit-tap-highlight-color: transparent;
+}
+.kasten-container{
+    justify-content: space-between;
+    display: flex;
+    width: 272px;
+}
+.kasten{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 40px;
+    color: #e8eaed;
+    flex: 1;
+    border-radius: 4px;
+    background-color: #303134;
+    margin: 20px 7px;
+    border: 1px solid #303134;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.fotdiv{
+    
+    
+    width: 100%;
+    background: #171717;
+    display: flex;
+    flex-direction: column;
+    color: #bdc1c6;
+}
+.land{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #171717;
+    width: 100%;
+    
+    border-bottom: 3px solid #202124;;
+}
+.rechtliches{
+    display: flex;
+    flex-direction: column;
+
+}
+.rechtliches-abteil{
+    display: flex;
+    justify-content: center;
+}
+.fo-text{
+    padding: 10px;
+    padding-right: 20px;
+}
