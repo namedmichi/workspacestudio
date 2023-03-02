@@ -1,0 +1,27 @@
+
+.flex-container {
+    display: flex;
+    background-color: pink;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-container > img {
+    background-color: #f1f1f1;
+    font-size: 30px;
+    padding-bottom: 10px;
+
+}
+@media screen and (max-width: 600px)  {
+    .flex-container{
+        flex-direction: column;
+    }
+    
+    .flex-container > img {
+        display: block;
+        height: 130px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+
+}
+}
