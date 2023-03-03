@@ -33,7 +33,26 @@ body{
     align-content: center;
 }
 .pic-con img{
-    margin-top: 210px;
+    margin-top: 170px;
+}
+.li-text{
+    margin-top: 8px;
+}
+.pb-span{
+    margin-bottom: 10px;
+}
+.pb{
+    line-height: normal;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: block;
+    background-size: 32px 32px;
+    border: 0;
+    position: relative;
+    display: inline;
+
 }
 .search{
     width: 100%;
@@ -43,7 +62,7 @@ body{
     margin: 0 auto;
     padding-top: 0px;
     width: 100%;
-    max-width: 584px;
+    max-width: 590px;
 }   
 .bar{
     display: flex;
@@ -53,7 +72,7 @@ body{
     border-radius: 24px;
     border: 1px solid #5f6368;
     box-shadow: none;
-    height: 44px;
+    height: 45px;
     width: auto;
     max-width: 584px;
 
@@ -62,10 +81,10 @@ body{
     background-color: #303134;
 }
 span{
-        margin-left: 15px;
-        height: 20px;
-        line-height: 20px;
-        width: 20px;
+    margin-left: 15px;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
     
 }
 .lupe{
@@ -92,11 +111,11 @@ svg {
     margin: 0;
     outline: none;
     color: #e8eaed;
-    word-wrap: break-word;
     display: flex;
-    -webkit-tap-highlight-color: transparent;
+
 }
 .kasten-container{
+    margin-top: 7px;
     justify-content: space-between;
     display: flex;
     width: 272px;
@@ -137,6 +156,7 @@ footer{
     border-bottom: 3px solid #202124;;
 }
 .rechtliches{
+    width: 100%;
     display: flex;
     flex-direction: column;
 
@@ -148,4 +168,24 @@ footer{
 .fo-text{
     padding: 10px;
     padding-right: 20px;
+}
+
+@media screen and (min-width: 1320px)  {
+    .fotdiv{    
+        
+      
+        display: flex;
+        flex-direction: column;
+        color: #bdc1c6;
+    }
+    .rechtliches{
+        display: block;
+        justify-content: flex-end;
+        flex-direction: row;
+    
+    }
+    .co2{
+
+    }
+
 }
