@@ -1,70 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+    <link rel="stylesheet" href="huddlecss.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature blocks
+    </title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="nav">
+          <div class="nav-oben">
+            <img src="images/logo.svg" class="logo" alt="" />
+            <div class="try"><p>Try It Free</p></div>
+          </div>
+          <div class="nav-unten">
+            <div class="unten-links">
+              <div class="h1">
+                <h1>Build The Community Your Fans Will Love</h1>
+              </div>
+              <div class="nav-text">
+                Huddle re-imagines the way we build communities. You have a
+                voice, but so does your audience. Create connections with your
+                users as you engage in genuine discussion.
+              </div>
+              <div class="nav-button">Get Started For Free</div>
+            </div>
+            <div class="unten-rechts">
+              <img src="images/illustration-mockups.svg" class="ilus" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
 
-  Try It Free
+      <div class="haupt-container">
+        <div class="texte-bilder1 texte-bilder">
+          <div class="texte">
+            <h2>Grow Together</h2>
+            Generate <b>meaningful</b> discussions with your <b>audience</b> and
+            build a <b>strong</b>, <b>loyal</b> community. Think of the
+            <b>insightful</b> conversations you miss out on with a
+            <b>feedback</b> form.
+          </div>
+          <div class="bilder">
+            <div class="bilder-con">
+              <img src="images/illustration-grow-together.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="texte-bilder2 texte-bilder">
+          <div class="bilder">
+            <div class="bilder-con">
+              <img src="images/illustration-flowing-conversation.svg" alt="" />
+            </div>
+          </div>
+          <div class="texte">
+            <h2>Flowing Conversations</h2>
+            You wouldn't <b>paginate</b> a conversation in real life, so why do
+            it online? <b>Our</b> threads have <br /><b>just-in-time</b> loading
+            for a more <br />
+            <b>natural</b> flow.
+          </div>
+        </div>
 
-  Build The Community Your Fans Will Love
+        <div class="texte-bilder3 texte-bilder">
+          <div class="texte">
+            <h2>Your Users</h2>
+            It takes <b>no time</b> at all to integrate Huddle with your app's
+            authentication solution. This means, <b>once</b> signed in to your
+            app, your users can start chatting <b>immediately</b>
+          </div>
+          <div class="bilder">
+            <div class="bilder-con">
+              <img src="images/illustration-your-users.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="ready overlap">
+          <div class="ready-text">Ready To Build Your Community?</div>
+          <div class="ready-button">Get Started For Free</div>
+        </div>
+      </div>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Get Started For Free
-
-  Grow Together
-
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
-
-  Flowing Conversations
-
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-  have just-in-time loading for a more natural flow.
-
-  Your Users
-
-  It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
-
-  +1-543-123-4567
-  example@huddle.com
-
-  About Us
-  What We Do
-  FAQ
-
-  Career
-  Blog
-  Contact Us
-
-  &copy; Copyright 2018 Huddle. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+      <footer>
+        <div class="footer">
+          <div class="fo-abteil1">
+            <div class="fo-text">
+              <img src="images/icon-location.svg" alt="" /> 2952 New York
+            </div>
+            <div class="fo-text">
+              <img src="images/icon-phone.svg" alt="" />+1-543-123-4567
+            </div>
+            <div class="fo-text">
+              <img src="images/icon-email.svg" alt="" />example@huddle.com
+            </div>
+            <div class="copy do-text">
+              &copy;Copyright 2018 Huddle. All rights reserved.
+            </div>
+          </div>
+          <div class="fo-abteil2">
+            <div class="fo-text">About Us</div>
+            <div class="fo-text">What We Do</div>
+            <div class="fo-text">FAQ</div>
+          </div>
+          <div class="fo-abteil3">
+            <div class="fo-text">Career</div>
+            <div class="fo-text">Blog</div>
+            <div class="fo-text">Contact Us</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
