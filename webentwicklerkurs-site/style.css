@@ -23,12 +23,16 @@ body {
 }
 h1 {
     font-size: 60px;
+    text-transform: uppercase;
 }
 .oben{
     padding: 50px;
     background-color: lightgreen;
     text-align: center;
 
+}
+.oben p{
+    color: white;
 }
 .unten{
     
