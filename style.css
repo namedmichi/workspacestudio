@@ -24,6 +24,7 @@ body {
   width: 70%;
   max-width: 1500px;
   flex-direction: column;
+  margin-top: 100px;
 }
 .h1 {
   color: white;
@@ -80,4 +81,27 @@ img {
   .seiten {
     font-size: 15px;
   }
+}
+.footer {
+  display: flex;
+  width: 100%;
+}
+footer {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.fo-block {
+  margin-right: 140px;
+}
+.fo-block .fo-text {
+}
+.fo-block .fo-text:hover {
+  background-color: rgba(0, 0, 0, 0.171);
+}
+
+footer img {
+  margin: 30px;
+  width: 30px;
 }
