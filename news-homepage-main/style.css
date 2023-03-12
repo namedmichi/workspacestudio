@@ -1,0 +1,257 @@
+body {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  font-size: 15;
+  color: var(--Dark-grayish-blue);
+}
+
+body.overlay-active {
+  overflow: hidden;
+}
+.wrapper {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 80%;
+  height: 100%;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.header-text {
+  display: flex;
+  margin-left: auto;
+}
+.head-text {
+  padding-left: 14px;
+}
+.icon {
+  justify-self: flex-start;
+}
+.menu {
+  display: none;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  max-height: fit-content;
+}
+.main-left {
+  width: 65%;
+  padding-right: 80px;
+}
+.main-right {
+  width: 35%;
+  background-color: var(--Very-dark-blue);
+}
+
+#web3img {
+  width: 100%;
+}
+.bottom {
+  display: flex;
+}
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  color: var(--Very-dark-blue);
+  font-weight: 700;
+}
+#botm-con {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 30px;
+}
+.button {
+  background-color: var(--Soft-red);
+  width: fit-content;
+  padding: 15px;
+  margin-top: 10px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.main-right-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 100%;
+}
+h2 {
+  color: var(--Soft-orange);
+  font-size: 2rem;
+}
+.news-container {
+  height: 20%;
+  border-bottom: 1px rgb(255, 255, 255) solid;
+}
+h3 {
+  color: var(--Off-white);
+}
+.footer {
+  margin-top: 40px;
+  display: flex;
+}
+.fo-container {
+  display: flex;
+}
+.fo-container img {
+  height: 12vh;
+}
+.fo-right {
+  padding: 10px;
+}
+.number {
+  color: var(--Grayish-blue);
+  font-size: 30px;
+}
+h4 {
+  padding: 0;
+  margin: 0;
+}
+.menu-container {
+  display: none;
+}
+@media only screen and (max-width: 1500px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .main-left {
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-right {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .bottom {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    justify-self: center;
+    align-self: center;
+  }
+  .footer {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .main-left {
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-right {
+    width: 100%;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .head-text {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  .menu-container {
+    display: sticky;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: white;
+}
