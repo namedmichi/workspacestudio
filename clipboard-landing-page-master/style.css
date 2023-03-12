@@ -21,6 +21,20 @@ body {
   display: flex;
   background-color: white;
 }
+.modes {
+  display: flex;
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
+}
+.mode {
+  width: 30px;
+}
+.modeL {
+  margin-left: 40px;
+}
 .head {
   background: url(images/bg-header-desktop.png) repeat no-repeat;
   background-size: 100vw;
@@ -40,7 +54,6 @@ h1 {
   max-width: 40ch;
 }
 .text {
-  color: var(--Dark-Grayish-Blue);
   text-align: center;
 }
 .buttons {
