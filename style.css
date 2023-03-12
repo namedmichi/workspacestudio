@@ -74,14 +74,7 @@ img {
     font-size: 40px;
   }
 }
-@media only screen and (max-width: 999px) {
-  .h1 {
-    font-size: 17px;
-  }
-  .seiten {
-    font-size: 15px;
-  }
-}
+
 .footer {
   display: flex;
   width: 100%;
@@ -105,4 +98,29 @@ footer {
 footer img {
   margin: 30px;
   width: 30px;
+}
+@media only screen and (max-width: 830px) {
+  .seiten-block {
+    flex-direction: column;
+  }
+  .tright .seiten {
+    margin-left: 0;
+  }
+  .tright {
+    flex-direction: column-reverse;
+  }
+  .iright .img {
+    margin-left: 0;
+  }
+  img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .h1 {
+    font-size: 17px;
+  }
+  .seiten {
+    font-size: 15px;
+  }
 }
