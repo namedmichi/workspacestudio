@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div id="cart">
+          <div class="cart-text">Cart</div>
+          <div class="cart-content">
+            <div id="empty">Your Cart is empty</div>
+            <div id="full">
+              <div class="cart-top">
+                <div class="cart-preview">
+                  <img
+                    src="images/image-product-1-thumbnail.jpg"
+                    alt=""
+                    id="cart-preview"
+                  />
+                </div>
+                <div class="cart-text-container">
+                  <div class="cart-item">Fall Limited Edition Sneakers</div>
+                  <div class="cart-text-container-bottom">
+                    <div class="cart-prize">$125.00x</div>
+                    <div id="times">3</div>
+                    <div id="total">$375.00</div>
+                  </div>
+                </div>
+                <div class="remove">
+                  <img
+                    src="images/icon-delete.svg"
+                    alt=""
+                    id="remove"
+                    onclick="cartRemove()"
+                  />
+                </div>
+              </div>
+              &nbsp;
+              <div class="cart-bottom">Checkout</div>
+            </div>
+          </div>
+        </div>
+        <div class="nav">
+          <img src="images/logo.svg" alt="" />
+          <p class="nav-text">Collections</p>
+          <p class="nav-text">Men</p>
+          <p class="nav-text">Women</p>
+          <p class="nav-text">About</p>
+          <p class="nav-text">Contact</p>
+        </div>
+        <div class="profile">
+          <div class="cart">
+            <img
+              class="cart"
+              src="images/icon-cart.svg"
+              alt=""
+              onclick="showCart()"
+            />
+          </div>
+          <div class="pb">
+            <img class="pb-pic" src="images/image-avatar.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-content">
+          <div class="left">
+            <div class="product-img">
+              <img src="images/image-product-1.jpg" alt="" />
+            </div>
+            <div class="product-preview">
+              <img
+                src="images/image-product-1-thumbnail.jpg"
+                alt=""
+                id="pre1"
+              /><img src="images/image-product-2-thumbnail.jpg"" alt=""
+              id="pre2"><img src="images/image-product-3-thumbnail.jpg"" alt=""
+              id="pre3"><img src="images/image-product-4-thumbnail.jpg"" alt=""
+              id="pre4" />
+            </div>
+          </div>
+          <div class="right">
+            <div class="company"><h2>Sneaker Company</h2></div>
+            <div class="product-titel">
+              <h1>Fall Limited Edition Sneakers</h1>
+            </div>
+            <div class="product-text">
+              <p>
+                These low-profile sneakers are your perfect casual wear
+                companion. Featuring a durable rubber outer sole, they’ll
+                withstand everything the weather can offer.
+              </p>
+            </div>
+            <div class="prize">
+              <div class="prizetop">
+                <div class="prizenew">$125.00</div>
+                <div class="discount">50%</div>
+              </div>
+              <div class="prizeold">$250.00</div>
+            </div>
+            <div class="add-cart">
+              <div class="counter-container">
+                <div id="less" onclick="clickLess()">-</div>
+                <div id="counter">0</div>
+                <div id="more" onclick="clickMore()">+</div>
+              </div>
+              <div id="add" onclick="addCart()">
+                <img src="images/icon-cart-white.svg" alt="" />Add to cart
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
