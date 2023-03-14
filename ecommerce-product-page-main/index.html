@@ -59,8 +59,29 @@
             </div>
           </div>
         </div>
+
+        <div id="nav-overlay" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <div class="overlay-content">
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+
         <div class="nav">
-          <img src="images/logo.svg" alt="" />
+          <img
+            class="menu-icon"
+            src="images/icon-menu.svg"
+            onclick="openNav()"
+            alt=""
+          />
+          <img class="logo" src="images/logo.svg" alt="" />
           <p class="nav-text">Collections</p>
           <p class="nav-text">Men</p>
           <p class="nav-text">Women</p>
@@ -84,18 +105,27 @@
       <div class="product">
         <div class="product-content">
           <div class="left">
-            <div class="product-img">
-              <img src="images/image-product-1.jpg" alt="" />
+            <div class="product-img" id="product-img">
+              <div id="previous" onclick="prevPic()">
+                <img src="images/icon-previous.svg" alt="" />
+              </div>
+              <img id="activ-product-image" src="" alt="" />
+              <div id="next">
+                <img src="images/icon-next.svg" onclick="nextPic()" alt="" />
+              </div>
             </div>
             <div class="product-preview">
               <img
                 src="images/image-product-1-thumbnail.jpg"
                 alt=""
                 id="pre1"
+                onclick="clickPic1()"
               /><img src="images/image-product-2-thumbnail.jpg"" alt=""
-              id="pre2"><img src="images/image-product-3-thumbnail.jpg"" alt=""
-              id="pre3"><img src="images/image-product-4-thumbnail.jpg"" alt=""
-              id="pre4" />
+              id="pre2" onclick="clickPic2()"><img
+              src="images/image-product-3-thumbnail.jpg"" alt="" id="pre3"
+              onclick="clickPic3()"><img
+              src="images/image-product-4-thumbnail.jpg"" alt="" id="pre4"
+              onclick="clickPic4()" />
             </div>
           </div>
           <div class="right">
