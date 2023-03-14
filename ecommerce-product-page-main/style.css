@@ -43,6 +43,9 @@ body.overlay-active {
   color: var(--Dark-grayish-blue);
   cursor: pointer;
 }
+.nav-text:hover {
+  background-color: #cacaca;
+}
 
 .profile {
   margin-left: auto;
@@ -330,8 +333,8 @@ body.overlay-active {
   }
   #counter {
     padding: 15px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 110px;
+    padding-right: 110px;
     font-size: 20px;
   }
   #more {
@@ -345,8 +348,8 @@ body.overlay-active {
     color: var(--White);
     border-radius: 15px;
     background-color: var(--Orange);
-    padding: 15px 45px 15px 45px;
-    margin-top: 6px;
+    padding: 15px 65px 15px 65px;
+    margin-top: 16px;
   }
   .overlay a {
     font-size: 20px;
@@ -356,7 +359,8 @@ body.overlay-active {
     top: 15px;
     right: 35px;
   }
-
+  .right {
+  }
   .overlay {
     height: 100%;
     width: 0;
