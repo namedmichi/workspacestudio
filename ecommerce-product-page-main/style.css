@@ -143,15 +143,19 @@ body.overlay-active {
 #less {
   padding: 15px;
   cursor: pointer;
+  align-self: center;
 }
 #counter {
   padding: 15px;
+  align-self: center;
 }
 #more {
   padding: 15px;
   cursor: pointer;
+  align-self: center;
 }
 #add {
+  height: fit-content;
   cursor: pointer;
   display: flex;
   color: var(--White);
@@ -348,7 +352,7 @@ body.overlay-active {
     color: var(--White);
     border-radius: 15px;
     background-color: var(--Orange);
-    padding: 15px 65px 15px 65px;
+    padding: 20px 65px 20px 65px;
     margin-top: 16px;
   }
   .overlay a {
