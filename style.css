@@ -49,6 +49,10 @@ body {
 .seiten {
   font-size: 1.9rem;
 }
+p {
+  font-size: 16px;
+  text-align: center;
+}
 a {
   text-decoration: none;
   color: white;
