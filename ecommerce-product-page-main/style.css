@@ -248,6 +248,17 @@ body.overlay-active {
   display: none;
 }
 
+#cart-containing {
+  display: none;
+  position: absolute;
+  margin-right: 100px;
+  margin-bottom: 45px;
+  background-color: orange;
+  padding: 3px 8px 3px 8px;
+  font-size: 10px;
+  border-radius: 20px;
+}
+
 @media only screen and (max-width: 999px) {
   .nav-text {
     display: none;
@@ -310,6 +321,16 @@ body.overlay-active {
   #next img {
     width: 20px;
   }
+  #cart-containing {
+    display: none;
+    position: absolute;
+    margin-right: 100px;
+    margin-bottom: 45px;
+    background-color: orange;
+    padding: 3px 8px 3px 8px;
+    font-size: 10px;
+    border-radius: 20px;
+  }
   .product-preview {
     display: none;
   }
@@ -334,6 +355,7 @@ body.overlay-active {
     padding: 15px;
     cursor: pointer;
     font-size: 30px;
+    margin-bottom: 6px;
   }
   #counter {
     padding: 15px;
@@ -345,6 +367,7 @@ body.overlay-active {
     padding: 15px;
     cursor: pointer;
     font-size: 30px;
+    margin-bottom: 6px;
   }
   #add {
     cursor: pointer;

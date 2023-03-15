@@ -26,6 +26,7 @@ function addCart(){
     var prize = 125
     var count = parseInt(document.getElementById("counter").innerHTML);
     if (count > 0){
+        document.getElementById("cart-containing").style.display = "block"
         document.getElementById("empty").style.display = "none"
         document.getElementById("full").style.display = "block"
         document.getElementById("times").innerHTML = count
@@ -34,6 +35,7 @@ function addCart(){
     }
 }
 function cartRemove(){
+    document.getElementById("cart-containing").style.display = "none"
     document.getElementById("empty").style.display = "block"
     document.getElementById("full").style.display = "none"
 }
