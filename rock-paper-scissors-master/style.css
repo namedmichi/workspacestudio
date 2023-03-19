@@ -109,8 +109,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   outline: 10px var(--Rock-Gradient) solid;
-  justify-self: flex-end;
-  align-self: flex-start;
+  justify-self: center;
+  align-self: center;
 }
 #scissor {
   background-color: white;
@@ -122,8 +122,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   outline: 10px var(--Scissors-Gradient) solid;
-  justify-self: center;
-  align-self: center;
+  justify-self: flex-end;
+  align-self: flex-start;
 }
 #paper:hover {
   outline: 10px hsl(230, 94%, 51%) solid;
