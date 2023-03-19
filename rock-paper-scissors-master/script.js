@@ -108,7 +108,8 @@ function compare(){
     if (resulte == 0){
         document.getElementById("middle").style.display = "flex";
         document.getElementById("resultText").innerHTML = "Du hast Verloren";
-        score = 0
+        if (score <= 0){ return}
+        score -= 1;
         localStorage.setItem('score', 0);
         document.getElementById("score").innerHTML = score;
 
