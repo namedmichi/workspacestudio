@@ -24,12 +24,26 @@
   <body>
     <div class="wrapper">
       <div class="content">
+        <div id="rulesOverlay">
+          <div class="overlayBox">
+            <div class="rulesTop">
+              <div class="rulesText">Regeln</div>
+              <div id="close" onclick="closeRules()">
+                <img src="images/icon-close.svg" alt="" />
+              </div>
+            </div>
+            <div class="rulesImg">
+              <img src="images/image-rules.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
         <div class="header">
           <div class="head-text">
             <h1>
-              Rock <br />
-              Paper <br />
-              Scissors
+              Schere <br />
+              Stein <br />
+              Papier
             </h1>
           </div>
           <div class="score">
@@ -60,7 +74,7 @@
         </div>
       </div>
       <div class="footer">
-        <!-- <div id="rules">Regeln</div> -->
+        <div id="rules" onclick="showRules()">Regeln</div>
       </div>
     </div>
     <script>

@@ -1,4 +1,4 @@
-body {
+:root {
   --Scissors-Gradient: hsl(39, 89%, 49%);
   --Paper-Gradient: hsl(230, 89%, 62%);
   --Rock-Gradient: hsl(349, 71%, 52%);
@@ -9,6 +9,13 @@ body {
   --Score-Text: hsl(229, 64%, 46%);
   --Header-Outline: hsl(217, 16%, 45%);
   --Radial-Gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+  --outline1widthP: 0px;
+  --outline2widthP: 0px;
+  --outline1widthB: 0px;
+  --outline2widthB: 0px;
+}
+
+body {
   font-family: "Barlow Semi Condensed", sans-serif;
   margin: 0;
   padding: 0;
@@ -87,6 +94,7 @@ body {
   justify-content: space-between;
 }
 #paper {
+  cursor: pointer;
   background-color: white;
   height: 120px;
   width: 120px;
@@ -100,6 +108,7 @@ body {
   justify-self: flex-start;
 }
 #rock {
+  cursor: pointer;
   background-color: white;
   height: 120px;
   width: 120px;
@@ -113,6 +122,7 @@ body {
   align-self: center;
 }
 #scissor {
+  cursor: pointer;
   background-color: white;
   height: 120px;
   width: 120px;
@@ -163,6 +173,7 @@ body {
   font-size: 50px;
 }
 #again {
+  cursor: pointer;
   background-color: white;
   border-radius: 10px;
   padding: 10px;
@@ -170,7 +181,7 @@ body {
   text-align: center;
 }
 #again:hover {
-  outline: 5px black solid;
+  outline: 2px rgb(255, 0, 0) solid;
 }
 .right {
   align-items: center;
@@ -183,7 +194,7 @@ body {
   justify-content: space-around;
 }
 #userSelect {
-  margin-top: 30px;
+  margin-top: 50px;
   background-color: white;
   height: 180px;
   width: 180px;
@@ -193,8 +204,26 @@ body {
   background-position: center;
   outline: 10px var(--Scissors-Gradient) solid;
 }
+#userSelect::before {
+  content: "";
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  z-index: -1;
+  border-radius: 50%;
+  outline: var(--outline1widthP) rgba(255, 255, 255, 0.151) solid;
+}
+#userSelect::after {
+  content: "";
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  z-index: -2;
+  border-radius: 50%;
+  outline: var(--outline2widthP) rgba(255, 255, 255, 0.151) solid;
+}
 #botSelect {
-  margin-top: 30px;
+  margin-top: 50px;
   background-color: rgba(0, 0, 0, 0.226);
   height: 180px;
   width: 180px;
@@ -203,7 +232,83 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+#botSelect::before {
+  content: "";
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  z-index: -1;
+  border-radius: 50%;
+  outline: var(--outline1widthB) rgba(255, 255, 255, 0.151) solid;
+}
+#botSelect::after {
+  content: "";
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  z-index: -2;
+  border-radius: 50%;
+  outline: var(--outline2widthB) rgba(255, 255, 255, 0.151) solid;
+}
 .footer {
+  font-weight: 300;
+  color: white;
+  margin-top: auto;
   align-self: flex-end;
   justify-self: flex-end;
+}
+#rules {
+  cursor: pointer;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  outline: 1px rgba(255, 255, 255, 0.404) solid;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+#rulesOverlay {
+  position: fixed;
+  z-index: 1;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.336);
+  overflow-x: hidden;
+  height: 100vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlayBox {
+  width: 30%;
+  height: 500px;
+  min-width: 500px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.rulesTop {
+  display: flex;
+}
+.rulesText {
+  color: var(--Dark-Text);
+  margin-left: 14px;
+  margin-top: 3px;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+.rulesImg {
+  margin-top: 50px;
+}
+.rulesImg img {
+  height: 340px;
+}
+#close {
+  cursor: pointer;
+  margin-left: auto;
+}
+#close img {
+  width: 30px;
+  margin-top: 14px;
+  margin-right: 10px;
 }
