@@ -17,8 +17,9 @@ var playercoice = ""
 var botcoice = ""
 var combined = ""
 var score = parseInt(localStorage.getItem('score'))
-if (score  == NaN) {
+if (isNaN(score)) {
     score = 0;
+    document.getElementById("score").innerHTML = score;
 }
 
 
