@@ -108,10 +108,14 @@ function compare(){
         score += 1;
         localStorage.setItem('score', score);
         document.getElementById("score").innerHTML = score;
+        document.documentElement.style.setProperty("--outline1widthP", "50px");
+        document.documentElement.style.setProperty("--outline2widthP", "70px");
     }
     if (resulte == 0){
         document.getElementById("middle").style.display = "flex";
         document.getElementById("resultText").innerHTML = "Du hast Verloren";
+        document.documentElement.style.setProperty("--outline1widthB", "50px");
+        document.documentElement.style.setProperty("--outline2widthB", "70px");
         if (score <= 0){ return}
         score -= 1;
         localStorage.setItem('score', 0);
@@ -135,7 +139,20 @@ function reload(){
     document.getElementById("botSelect").style.backgroundImage = "url()"
     document.getElementById("botSelect").style.backgroundColor = "rgba(0, 0, 0, 0.226)"
     document.getElementById("botSelect").style.outline = "none";
+    document.documentElement.style.setProperty("--outline1widthP", "0px");
+    document.documentElement.style.setProperty("--outline2widthP", "0px");
+    document.documentElement.style.setProperty("--outline1widthB", "0px");
+    document.documentElement.style.setProperty("--outline2widthB", "0px");
+    document.getElementById("botWahlt").innerHTML = "Bot Wählt";
+
+
+}
 
 
 
+function showRules(){
+    document.getElementById("rulesOverlay").style.width = "100vmax";
+}
+function closeRules(){
+    document.getElementById("rulesOverlay").style.width = "0";
 }
