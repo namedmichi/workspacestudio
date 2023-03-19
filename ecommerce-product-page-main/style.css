@@ -337,6 +337,12 @@ body.overlay-active {
   .product-text {
     padding-right: 25px;
   }
+  .right {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
   .add-cart {
     flex-direction: column;
     margin-top: 30px;
