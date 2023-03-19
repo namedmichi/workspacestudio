@@ -17,6 +17,9 @@ var playercoice = ""
 var botcoice = ""
 var combined = ""
 var score = parseInt(localStorage.getItem('score'))
+if (score  = NaN) {
+    score = 0;
+}
 
 
 function selected(element){
