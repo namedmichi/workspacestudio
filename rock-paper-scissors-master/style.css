@@ -1,0 +1,209 @@
+body {
+  --Scissors-Gradient: hsl(39, 89%, 49%);
+  --Paper-Gradient: hsl(230, 89%, 62%);
+  --Rock-Gradient: hsl(349, 71%, 52%);
+  --Lizard-Gradient: hsl(261, 73%, 60%);
+  --Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%);
+
+  --Dark-Text: hsl(229, 25%, 31%);
+  --Score-Text: hsl(229, 64%, 46%);
+  --Header-Outline: hsl(217, 16%, 45%);
+  --Radial-Gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: radial-gradient(
+    at top,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  overflow: hidden;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  align-items: center;
+}
+.content {
+  display: flex;
+  width: 80dvw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  display: flex;
+  width: 65%;
+  outline: 3px var(--Header-Outline) solid;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.head-text {
+  margin-left: 30px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.score {
+  border-radius: 20px;
+  margin: 20px;
+  height: 120px;
+  width: 180px;
+  background-color: white;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.score h2 {
+  font-weight: 300;
+  color: var(--Score-Text);
+  margin-top: 6px;
+}
+#score {
+  color: var(--Dark-Text);
+  font-size: 30px;
+}
+
+#symbolSelect {
+  width: 400px;
+  height: 400px;
+  min-width: 400px;
+  background-image: url(images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.symbolTop {
+  display: flex;
+  justify-content: space-between;
+}
+#paper {
+  background-color: white;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-image: url(images/icon-paper.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: 10px var(--Paper-Gradient) solid;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+#rock {
+  background-color: white;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-image: url(images/icon-rock.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: 10px var(--Rock-Gradient) solid;
+  justify-self: flex-end;
+  align-self: flex-start;
+}
+#scissor {
+  background-color: white;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-image: url(images/icon-scissors.svg);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: 10px var(--Scissors-Gradient) solid;
+  justify-self: center;
+  align-self: center;
+}
+#paper:hover {
+  outline: 10px hsl(230, 94%, 51%) solid;
+}
+#rock:hover {
+  outline: 10px hsl(0, 84%, 25%) solid;
+}
+#scissor:hover {
+  outline: 10px hsl(40, 55%, 38%) solid;
+}
+
+#symbolSelected {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 80%;
+  display: none;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+#middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+#resultText {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+#again {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+#again:hover {
+  outline: 5px black solid;
+}
+.right {
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+#userSelect {
+  margin-top: 30px;
+  background-color: white;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: 10px var(--Scissors-Gradient) solid;
+}
+#botSelect {
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.226);
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
