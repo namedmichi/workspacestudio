@@ -2,6 +2,11 @@
   "recommendations": [
     "hwencc.html-tag-wrapper",
     "jkjustjoshing.vscode-text-pastry",
-    "tabnine.tabnine-vscode"
+    "tabnine.tabnine-vscode",
+    "simonsiefke.svg-preview",
+    "icrawl.discord-vscode",
+    "pranaygp.vscode-css-peek",
+    "shd101wyy.markdown-preview-enhanced",
+    "8rin5x.onelinecomments"
   ]
 }
