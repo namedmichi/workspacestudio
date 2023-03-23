@@ -1,0 +1,39 @@
+.content{
+    max-width: 70%;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+  grid-template-areas:
+    'kopf kopf kopf kopf kopf kopf'
+    'links inhalt inhalt inhalt inhalt rechts'
+    'footer footer footer footer footer footer';
+    row-gap: 10px;
+    column-gap: 20px;
+    background-color: rgb(61, 197, 72);
+    padding: 10px;
+}
+.kopf{
+    background-color: lightgreen;
+    grid-area: kopf;
+    text-align: center;
+}
+.links{
+    background-color: lightgreen;
+    grid-area: links;
+}
+.rechts{
+    background-color: lightgreen;
+    grid-area: rechts;
+}
+.inhalt{
+    text-align: center;
+    background-color: lightgreen;
+    grid-area: inhalt;
+}
+.footer{
+    background-color: lightgreen;
+    grid-area: footer;
+    text-align: center;
+}
