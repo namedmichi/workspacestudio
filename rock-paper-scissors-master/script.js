@@ -61,7 +61,6 @@ async function botSelect(){
     document.getElementById("botWahlt").innerHTML = "Bot Wahl";
     var rand = Math.floor(Math.random() * 3);
     // scissors
-    console.log(rand)
     if (rand < 3){
         botcoice = "s"
     }
@@ -74,7 +73,6 @@ async function botSelect(){
         botcoice = "r"
     }
     combined =  playercoice + botcoice 
-    console.log(combined)
     
     if (botcoice == "p"){
         document.getElementById("botSelect").style.backgroundImage = "url(images/icon-paper.svg)"
@@ -93,7 +91,6 @@ async function botSelect(){
         document.getElementById("botSelect").style.backgroundColor = "white";
         
     }
-    console.log(posibilitys[combined]);
     compare();
     
     
