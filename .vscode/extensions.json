@@ -7,6 +7,10 @@
     "icrawl.discord-vscode",
     "pranaygp.vscode-css-peek",
     "shd101wyy.markdown-preview-enhanced",
-    "8rin5x.onelinecomments"
+    "8rin5x.onelinecomments",
+    "angular.ng-template",
+    "mikael.angular-beastcode",
+    "dbaeumer.vscode-eslint",
+    "pkief.material-icon-theme"
   ]
 }
