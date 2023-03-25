@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button {
+  width: 200px;
+  height: 50px;
+  background: none;
+  border: none;
+  text-align: start;
+  color: white;
+}
+img {
+  width: 600px;
+}
+.infos {
+  color: white;
+  font-size: 20px;
+}

@@ -1,0 +1,14 @@
+nav {
+  background-color: var(--Dark-Blue);
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 10px;
+}
+h2 {
+  font-size: 50px;
+}
+div {
+  margin-left: auto;
+  font-size: 30px;
+}

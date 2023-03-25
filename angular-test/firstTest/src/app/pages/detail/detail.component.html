@@ -1,0 +1,46 @@
+<button class="button shadow" [routerLink]="'/'">
+  <span class="fa fa-arrow-left"></span>
+  Back
+</button>
+<div *ngIf="country$ | async; let country" class="card">
+  <h3>{{ country.name[0] }}</h3>
+
+  <div>
+    <img [src]="getFlag(country.flags)" />
+    <div class="infos">
+      <p>
+        <strong>Native Name:</strong>
+        {{ country.nativeName }}
+      </p>
+      <p>
+        <strong>Population:</strong>
+        {{ country.population | number : "1.0" }}
+      </p>
+      <p>
+        <strong>Region:</strong>
+        {{ country.region }}
+      </p>
+      <p>
+        <strong>Sub Region:</strong>
+        {{ country.subregion }}
+      </p>
+      <p>
+        <strong>Capital:</strong>
+        {{ country.capital }}
+      </p>
+
+      <p>
+        <strong>Top Level Domain:</strong>
+        {{ country.topLevelDomain }}
+      </p>
+      <p>
+        <strong>Currencies:</strong>
+        {{ displayCurrencies(country.currencies) }}
+      </p>
+      <p>
+        <strong>Languages:</strong>
+        {{ displayLanguages(country.languages) }}
+      </p>
+    </div>
+  </div>
+</div>
