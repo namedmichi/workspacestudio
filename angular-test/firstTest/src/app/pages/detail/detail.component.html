@@ -1,7 +1,7 @@
 <button class="button shadow" [routerLink]="'/'">
   <span class="fa fa-arrow-left"><p>back</p></span>
 </button>
-<div *ngIf="country$ | async; else noData; let country" class="card">
+<div *ngIf="country$ | async as country; else noData" class="card">
   <div class="cardCon">
     <img [src]="getFlag(country.flags)" />
     <div class="infos">

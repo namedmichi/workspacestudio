@@ -23,6 +23,9 @@ export class ApiService {
     .pipe(map(([res]) => res));
   }
   getCountriesByCodes(codes: string[]) {
+    if(codes == undefined) {
+      return this.borderCountries$
+    }
     console.log(`https://restcountries.com/v3.1/alpha?codes=${codes.join(',')}`);
 
     return this.http.get<Country[]>(
