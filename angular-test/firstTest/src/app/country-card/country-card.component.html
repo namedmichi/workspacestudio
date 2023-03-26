@@ -1,5 +1,10 @@
 <div>
-  <div *ngIf="country" [routerLink]="'/' + country.name" class="card">
+  <div
+    *ngIf="country"
+    [routerLink]="'/' + country.name"
+    class="card"
+    name="country-cardes"
+  >
     <div class="country-card-img">
       <img [src]="country.flag" />
     </div>
