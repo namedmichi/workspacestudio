@@ -10,6 +10,7 @@ import { NavBarComponent } from './pages/nav-bar/nav-bar.component';
 import { CountryCardComponent } from './country-card/country-card.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { CountryCardComponent } from './country-card/country-card.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
