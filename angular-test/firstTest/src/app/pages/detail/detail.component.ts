@@ -25,10 +25,10 @@ export class DetailComponent implements OnInit {
   }
 
   displayCurrencies(currencies: Currency[]) {
-    console.log(Object.keys(currencies));
+
     return Object.keys(currencies).map((currency) => currency)
   }
-
+  
   displayLanguages(languages: Language[]) {
     return Object.keys(languages).map((language) => language)
   }
@@ -37,5 +37,10 @@ export class DetailComponent implements OnInit {
     return a[1];
     
     
+  }
+  displayName(name: string) {
+
+    var a = Object.values(name).map((name) => name)
+    return a[0]
   }
 }

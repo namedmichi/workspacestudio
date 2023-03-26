@@ -1,14 +1,16 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: 400px;
+
   background-color: var(--Very-Dark-Blue2);
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 20px;
   cursor: pointer;
+  width: 22dvw;
 }
 img {
   width: 22dvw;
+  aspect-ratio: 41/27;
 }
