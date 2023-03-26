@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .button {
   margin-top: 50px;
   margin-left: 50px;
@@ -37,9 +38,34 @@ img {
   color: white;
   font-size: 20px;
   display: flex;
+  flex-direction: column;
+}
+.infoTop {
+  display: flex;
 }
 .info2 {
   margin-left: 30px;
   margin-top: 20px;
   align-self: center;
+}
+.border-countries {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.border-countries-buttons {
+  display: flex;
+}
+.borderButton {
+  margin: 5px;
+  padding: 5px;
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.noDataCon {
+  font-size: 50px;
+}
+.noDataCon p {
+  text-align: center;
 }

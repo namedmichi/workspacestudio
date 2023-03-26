@@ -19,7 +19,12 @@ export class DetailComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       this.country$ = this.api.getCountryByName(params['country']).pipe(
-        tap((res) => console.log(res))
+        tap((res) => console.log(res)),
+        mergeMap((res) => {
+          this.borderCountries$ = this.api.getCountriesByCodes(res.borders);
+          console.log(this.borderCountries$);
+          return of(res);
+        })
       );
     });
   }
@@ -48,4 +53,5 @@ export class DetailComponent implements OnInit {
   displayDomain(domain: string[]){
     console.log(domain)
   }
+
 }

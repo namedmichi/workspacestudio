@@ -14,6 +14,7 @@ export class NavBarComponent {
   setDark(){
 
     if (this.isDark$) {
+      alert("Light mode ist WIP")
       
       document.body.style.backgroundColor = "var(--Very-Light-Gray)"
       
