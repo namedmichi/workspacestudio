@@ -17,4 +17,5 @@ export class HomeComponent  implements OnInit {
     this.countries$ = this.api.getAllCountries();
     
   }
+
 }

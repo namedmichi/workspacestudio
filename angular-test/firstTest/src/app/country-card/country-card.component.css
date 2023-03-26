@@ -2,15 +2,21 @@
   display: flex;
   flex-direction: column;
 
-  background-color: var(--Very-Dark-Blue2);
-  padding: 20px;
+  background-color: var(--Very-Dark-Blue);
+  margin-right: 50px;
+  margin-left: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
-  width: 22dvw;
+  width: 18dvw;
+  height: fit-content;
 }
 img {
-  width: 22dvw;
+  width: 18dvw;
   aspect-ratio: 41/27;
+}
+.country-card-info {
+  margin-left: 10px;
+  padding-bottom: 20px;
 }

@@ -25,12 +25,14 @@ export class DetailComponent implements OnInit {
   }
 
   displayCurrencies(currencies: Currency[]) {
-
-    return Object.keys(currencies).map((currency) => currency)
+    var a = Object.values(currencies).map((currency) => currency)
+    var z = Object.values(a[0]).map((b) => b)
+    
+    return z[1]+ " " + z[0]
   }
   
   displayLanguages(languages: Language[]) {
-    return Object.keys(languages).map((language) => language)
+    return Object.values(languages).map((language) => language)
   }
   getFlag(flag: Flags) {
     var a = Object.values(flag).map((flag) => flag)
@@ -42,5 +44,8 @@ export class DetailComponent implements OnInit {
 
     var a = Object.values(name).map((name) => name)
     return a[0]
+  }
+  displayDomain(domain: string[]){
+    console.log(domain)
   }
 }
