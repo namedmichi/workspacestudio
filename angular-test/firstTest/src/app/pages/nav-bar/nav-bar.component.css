@@ -12,3 +12,6 @@ div {
   margin-left: auto;
   font-size: 30px;
 }
+span {
+  cursor: pointer;
+}

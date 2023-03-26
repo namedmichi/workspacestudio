@@ -1,43 +1,65 @@
 <button class="button shadow" [routerLink]="'/'">
   <span class="fa fa-arrow-left"><p>back</p></span>
 </button>
-<div *ngIf="country$ | async; let country" class="card">
+<div *ngIf="country$ | async; else noData; let country" class="card">
   <div class="cardCon">
     <img [src]="getFlag(country.flags)" />
     <div class="infos">
-      <div class="info1">
-        <h3>{{ displayName(country.name) }}</h3>
-        <p>
-          <strong>Native Name:</strong>
-          {{ displayName(country.name) }}
-        </p>
-        <p>
-          <strong>Population:</strong>
-          {{ country.population | number : "1.0" }}
-        </p>
-        <p>
-          <strong>Region:</strong>
-          {{ country.region }}
-        </p>
-        <p>
-          <strong>Sub Region:</strong>
-          {{ country.subregion }}
-        </p>
-        <p>
-          <strong>Capital:</strong>
-          {{ country.capital }}
-        </p>
+      <div class="infoTop">
+        <div class="info1">
+          <h3>{{ displayName(country.name) }}</h3>
+          <p>
+            <strong>Native Name:</strong>
+            {{ displayName(country.name) }}
+          </p>
+          <p>
+            <strong>Population:</strong>
+            {{ country.population | number : "1.0" }}
+          </p>
+          <p>
+            <strong>Region:</strong>
+            {{ country.region }}
+          </p>
+          <p>
+            <strong>Sub Region:</strong>
+            {{ country.subregion }}
+          </p>
+          <p>
+            <strong>Capital:</strong>
+            {{ country.capital }}
+          </p>
+        </div>
+        <div class="info2">
+          <p>
+            <strong>Currencies:</strong>
+            {{ displayCurrencies(country.currencies) }}
+          </p>
+          <p>
+            <strong>Languages:</strong>
+            {{ displayLanguages(country.languages) }}
+          </p>
+        </div>
       </div>
-      <div class="info2">
-        <p>
-          <strong>Currencies:</strong>
-          {{ displayCurrencies(country.currencies) }}
-        </p>
-        <p>
-          <strong>Languages:</strong>
-          {{ displayLanguages(country.languages) }}
-        </p>
+      <div class="border-countries">
+        <p><strong>Border Countries:</strong></p>
+        <div
+          *ngIf="borderCountries$ | async; let borderCountries"
+          class="border-countries-buttons"
+        >
+          <div
+            *ngFor="let borderCountry of borderCountries"
+            class="borderButton"
+            [routerLink]="'/' + displayName(borderCountry.name)"
+          >
+            <p>{{ displayName(borderCountry.name) }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+<ng-template #noData>
+  <div class="noDataCon">
+    <p>Es gibt nicht genug Daten zu diesem Land</p>
+  </div>
+</ng-template>
