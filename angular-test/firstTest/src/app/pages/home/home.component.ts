@@ -17,5 +17,18 @@ export class HomeComponent  implements OnInit {
     this.countries$ = this.api.getAllCountries();
     
   }
-
+  getCountries(region: string){
+    this.countries$ = this.api.getCountriesByRegion(region);
+  }
+  
+  getCountriesName(){
+    const input = document.getElementById('nameInpu') as HTMLInputElement;
+    var name = input?.value;
+    console.log(name.length);
+    if (name.length == 0){
+      this.countries$ = this.api.getAllCountries();
+      return
+    }
+    this.countries$ = this.api.getCountryByNames(name.toString())
+  }
 }

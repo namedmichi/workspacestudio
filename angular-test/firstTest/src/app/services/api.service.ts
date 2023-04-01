@@ -16,11 +16,19 @@ export class ApiService {
   getAllCountries() {
     return this.http.get<Country[]>(`https://restcountries.com/v2/all`);
   }
-  
+  getCountriesByRegion(region: string){
+    return this.http.get<Country[]>(`https://restcountries.com/v2/region/${region}`);
+  }
+
   getCountryByName(name: string) {
     return this.http
     .get<Country[]>(`${this.api}/name/${name}`)
     .pipe(map(([res]) => res));
+  }
+  getCountryByNames(name: string) {
+    return this.http
+    .get<Country[]>(`https://restcountries.com/v2/name/${name}`)
+
   }
   getCountriesByCodes(codes: string[]) {
     if(codes == undefined) {
