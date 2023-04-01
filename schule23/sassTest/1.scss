@@ -1,0 +1,43 @@
+@import "reFlexFoo";
+
+
+
+
+$schrift: Arial, sans-serif;
+$schriftGroesse: 18px;
+$weite: 1200px;
+$farbe: lightgreen;
+
+body {
+  font-family: $schrift;
+  font-size: $schriftGroesse;
+  color: $farbe;
+
+}
+.wrapper{
+  align-items: center;
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+ div{
+  @include wichtiger-text;
+  
+
+  
+  font: {
+    family: Helvetica, sans-serif;
+    size: 18px;
+    weight: bold;
+  }
+  
+  text: {
+    align: center;
+    transform: lowercase;
+    overflow: hidden;
+  }
+ }
+}

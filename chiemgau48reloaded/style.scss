@@ -1,0 +1,147 @@
+@import "reFlexFoo";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,800;1,300&display=swap");
+$backgroundLight: #e4f1fe;
+$backgroundDark: #22313f;
+$textColorLight: #34495e;
+$sidebarBackgroundDark: #e4f1fe;
+$sidebarBackgroundDark: #304253;
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  color: $backgroundLight;
+  font: {
+    family: "Open sans";
+    size: 1rem;
+  }
+}
+body {
+  background-color: $backgroundDark;
+}
+.wrapper {
+  align-items: center;
+}
+nav {
+  display: flex;
+  width: 100%;
+  height: 220px;
+  align-items: center;
+  justify-content: center;
+  background-color: $textColorLight;
+  img {
+    height: 200px;
+    position: absolute;
+  }
+  .navMenu {
+    margin-right: auto;
+  }
+}
+
+.content {
+  width: 60%;
+  max-width: 1400px;
+  display: flex;
+
+  .left {
+    background-color: $textColorLight;
+    width: 70%;
+    @include flexCol();
+    .article {
+      border-bottom: 1px $backgroundLight solid;
+      align-items: center;
+      display: flex;
+
+      .img {
+        padding: 10px;
+        height: fit-content;
+        img {
+        }
+      }
+
+      .news {
+        @include flexCol();
+        padding: 20px;
+
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+    .dArticle {
+      margin-top: 10px;
+      display: flex;
+      padding-bottom: 10px;
+      border-bottom: 1px $backgroundLight solid;
+      h3 {
+        margin-block-start: 0px;
+      }
+      .left {
+        flex-direction: row;
+        display: flex;
+        width: 70%;
+        font-size: 14px;
+        border-right: 1px $backgroundLight solid;
+        img {
+          padding: 10px;
+          width: 200px;
+        }
+      }
+      .right {
+        background-color: $textColorLight;
+        display: flex;
+        width: 30%;
+        img {
+          width: 90%;
+          padding: 0px 30 30px 30px;
+        }
+      }
+    }
+    .dArticle2 {
+      margin-top: 10px;
+      display: flex;
+      padding-bottom: 10px;
+      border-bottom: 1px $backgroundLight solid;
+      h3 {
+        margin-block-start: 0px;
+      }
+      .left {
+        display: flex;
+        width: 30%;
+        border-right: 1px $backgroundLight solid;
+        img {
+          width: 90%;
+          padding: 10px;
+        }
+      }
+      .right {
+        margin-block-start: 0;
+        background-color: $textColorLight;
+        flex-direction: row;
+        display: flex;
+        width: 70%;
+        font-size: 14px;
+        img {
+          padding: 10px;
+          width: 200px;
+        }
+      }
+    }
+    .articleText {
+      border-bottom: 1px $backgroundLight solid;
+    }
+  }
+  .right {
+    width: 30%;
+    @include flexCol();
+    background-color: $sidebarBackgroundDark;
+    align-items: center;
+    justify-content: center;
+
+    .weather {
+      width: 260px;
+      height: fit-content;
+    }
+  }
+}
