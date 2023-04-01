@@ -23,6 +23,8 @@ export class NavBarComponent {
       var h2s = document.getElementsByTagName("h2")
       var h3s = document.getElementsByTagName("h3")
       var cards = document.getElementsByName("country-cardes")
+      var drop = document.getElementsByName("dropdown-content")
+      var drop2 = document.getElementsByName("dropbtn")
       for (let index = 0; index < ps.length; index++) {
         const element = ps[index];
         element.style.color = "black"
@@ -50,6 +52,22 @@ export class NavBarComponent {
         
         
       }
+      for (let index = 0; index < drop.length; index++) {
+        const element = drop[index]
+        element.style.backgroundColor = "white";
+        element.style.color = "black"
+
+        
+        
+      }
+      for (let index = 0; index < drop2.length; index++) {
+        const element = drop2[index]
+        element.style.backgroundColor = "white";
+        element.style.color = "black"
+
+        
+        
+      }
       this.isDark$ = false;
     }else{
       document.body.style.backgroundColor = "var(--Very-Dark-Blue2)"
@@ -59,6 +77,8 @@ export class NavBarComponent {
       var h2s = document.getElementsByTagName("h2")
       var h3s = document.getElementsByTagName("h3")
       var cards = document.getElementsByName("country-cardes")
+      var drop = document.getElementsByName("dropdown-content")
+      var drop2 = document.getElementsByName("dropbtn")
       for (let index = 0; index < ps.length; index++) {
         const element = ps[index];
         element.style.color = "white"
@@ -83,6 +103,22 @@ export class NavBarComponent {
       for (let index = 0; index < navs.length; index++) {
         const element = navs[index]
         element.style.backgroundColor = "var(--Dark-Blue)";
+        
+        
+      }
+      for (let index = 0; index < drop.length; index++) {
+        const element = drop[index]
+        element.style.backgroundColor = "var(--Very-Dark-Blue)";
+        element.style.color = "white"
+
+        
+        
+      }
+      for (let index = 0; index < drop2.length; index++) {
+        const element = drop2[index]
+        element.style.backgroundColor = "var(--Very-Dark-Blue)";
+        element.style.color = "white"
+
         
         
       }

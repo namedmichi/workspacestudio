@@ -3,6 +3,71 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.searchName {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+input {
+  text-align: center;
+  font-size: 20px;
+  height: 30px;
+  border-radius: 10px;
+}
+.searchRegion {
+  margin-right: 50px;
+  margin-top: 30px;
+  margin-left: auto;
+}
+.searchBar {
+  display: flex;
+  height: 100px;
+}
+.dropbtn {
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--Very-Dark-Blue);
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: inherit;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px rgb(255, 255, 255) solid;
+}
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--Very-Dark-Blue);
+}
 .card {
   color: white;
   width: 22%;
