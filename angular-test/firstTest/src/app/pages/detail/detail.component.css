@@ -52,6 +52,7 @@ img {
   padding-top: 50px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .border-countries-buttons {
   display: flex;

@@ -10,9 +10,11 @@
   border-radius: 10px;
   cursor: pointer;
   width: 18dvw;
+  min-width: 274px;
   height: fit-content;
 }
 img {
+  min-width: 274px;
   width: 18dvw;
   aspect-ratio: 41/27;
 }
