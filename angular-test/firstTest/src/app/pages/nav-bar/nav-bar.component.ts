@@ -25,9 +25,23 @@ export class NavBarComponent {
       var cards = document.getElementsByName("country-cardes")
       var drop = document.getElementsByName("dropdown-content")
       var drop2 = document.getElementsByName("dropbtn")
+      var inpu = document.getElementsByName("nameInpu")
+      var inpu2 = document.getElementsByName("icon")
       for (let index = 0; index < ps.length; index++) {
         const element = ps[index];
         element.style.color = "black"
+        
+      }
+      for (let index = 0; index < inpu.length; index++) {
+        const element = inpu[index];
+        element.style.backgroundColor = "white"
+        element.style.color ="black";
+
+        
+      }
+      for (let index = 0; index < inpu2.length; index++) {
+        const element = inpu2[index];
+        element.style.backgroundColor = "white"
         
       }
       for (let index = 0; index < h2s.length; index++) {
@@ -79,9 +93,22 @@ export class NavBarComponent {
       var cards = document.getElementsByName("country-cardes")
       var drop = document.getElementsByName("dropdown-content")
       var drop2 = document.getElementsByName("dropbtn")
+      var inpu = document.getElementsByName("nameInpu")
+      var inpu2 = document.getElementsByName("icon")
       for (let index = 0; index < ps.length; index++) {
         const element = ps[index];
         element.style.color = "white"
+        
+      }
+      for (let index = 0; index < inpu.length; index++) {
+        const element = inpu[index];
+        element.style.backgroundColor ="var(--Very-Dark-Blue)";
+        element.style.color ="white";
+        
+      }
+      for (let index = 0; index < inpu2.length; index++) {
+        const element = inpu2[index];
+        element.style.backgroundColor ="var(--Very-Dark-Blue)";
         
       }
       for (let index = 0; index < h2s.length; index++) {
