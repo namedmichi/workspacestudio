@@ -145,3 +145,13 @@ p {
     font-size: 13px;
   }
 }
+@media only screen and (max-width: 780px) {
+  .count {
+    display: none;
+  }
+}
+@media only screen and (min-width: 2550px) {
+  .count {
+    left: 48%;
+  }
+}
