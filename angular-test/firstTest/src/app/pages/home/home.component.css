@@ -10,6 +10,7 @@
   border-radius: 6px;
   height: 40px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .icon {
   margin-left: 10px;
@@ -24,6 +25,7 @@ input {
   height: 40px;
   border: none;
   color: white;
+  cursor: pointer;
 }
 .searchName:focus {
 }
@@ -32,10 +34,20 @@ input:focus {
   border: none;
   border: 1px white solid;
 }
+.count {
+  font-size: 30px;
+  margin-top: 40px;
+  color: white;
+  left: 45%;
+  position: absolute;
+  justify-self: center;
+}
+
 .searchRegion {
   margin-right: 50px;
   margin-top: 30px;
   margin-left: auto;
+  cursor: pointer;
 }
 .searchBar {
   display: flex;
@@ -53,6 +65,7 @@ input:focus {
 }
 
 .dropdown {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   color: white;

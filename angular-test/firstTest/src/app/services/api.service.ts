@@ -14,10 +14,10 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   getAllCountries() {
-    return this.http.get<Country[]>(`https://restcountries.com/v2/all`);
+    return this.http.get<Country[]>(`https://restcountries.com/v2/all?fields=name,capital,population,region,flag`);
   }
   getCountriesByRegion(region: string){
-    return this.http.get<Country[]>(`https://restcountries.com/v2/region/${region}`);
+    return this.http.get<Country[]>(`https://restcountries.com/v2/region/${region}?fields=name,capital,population,region,flag`);
   }
 
   getCountryByName(name: string) {
