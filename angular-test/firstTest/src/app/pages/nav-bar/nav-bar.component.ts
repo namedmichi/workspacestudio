@@ -27,8 +27,14 @@ export class NavBarComponent {
       var drop2 = document.getElementsByName("dropbtn")
       var inpu = document.getElementsByName("nameInpu")
       var inpu2 = document.getElementsByName("icon")
+      var count = document.getElementsByName("count")
       for (let index = 0; index < ps.length; index++) {
         const element = ps[index];
+        element.style.color = "black"
+        
+      }
+      for (let index = 0; index < count.length; index++) {
+        const element = count[index];
         element.style.color = "black"
         
       }
@@ -95,8 +101,15 @@ export class NavBarComponent {
       var drop2 = document.getElementsByName("dropbtn")
       var inpu = document.getElementsByName("nameInpu")
       var inpu2 = document.getElementsByName("icon")
+      var count = document.getElementsByName("count")
+
       for (let index = 0; index < ps.length; index++) {
         const element = ps[index];
+        element.style.color = "white"
+        
+      }
+      for (let index = 0; index <count.length; index++) {
+        const element = count[index];
         element.style.color = "white"
         
       }

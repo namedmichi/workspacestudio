@@ -5,19 +5,22 @@
       name="nameInpu"
       id="nameInpu"
       type="text"
-      (keydown)="getCountriesName()"
+      (keydown)="getCountriesName(); updateCount()"
       placeholder="Suche"
     />
+  </div>
+  <div name="count" class="count" *ngIf="count$ as count">
+    Anzahl={{ count }}
   </div>
   <div class="searchRegion">
     <div class="dropdown">
       <button name="dropbtn" class="dropbtn">Filter by Region</button>
       <div name="dropdown-content" class="dropdown-content">
-        <a (click)="getCountries('Asia')">Asia</a>
-        <a (click)="getCountries('Europe')">Europe</a>
-        <a (click)="getCountries('Africa')">Africa</a>
-        <a (click)="getCountries('Americas')">Americas</a>
-        <a (click)="getCountries('Oceania')">Oceania</a>
+        <a (click)="getCountries('Asia'); updateCount()">Asia</a>
+        <a (click)="getCountries('Europe'); updateCount()">Europe</a>
+        <a (click)="getCountries('Africa'); updateCount()">Africa</a>
+        <a (click)="getCountries('Americas'); updateCount()">Americas</a>
+        <a (click)="getCountries('Oceania'); updateCount()">Oceania</a>
       </div>
     </div>
   </div>
@@ -26,6 +29,7 @@
   <app-country-card
     *ngFor="let country of countries$ | async"
     [country]="country"
+    name="card"
   >
   </app-country-card>
 </div>

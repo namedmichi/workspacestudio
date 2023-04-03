@@ -7,13 +7,15 @@
   margin-left: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 10px;
+  border-radius: 7px;
   cursor: pointer;
   width: 18dvw;
   min-width: 274px;
   height: fit-content;
 }
 img {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
   min-width: 274px;
   width: 18dvw;
   aspect-ratio: 41/27;
