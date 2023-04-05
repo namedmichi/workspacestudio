@@ -20,7 +20,7 @@ footer {
 }
 
 :root {
-  color: #e4f1fe;
+  color: rgba(228, 241, 254, 0.937254902);
   font-family: "Open sans";
   font-size: 1rem;
 }
@@ -39,7 +39,7 @@ nav {
   height: 220px;
   align-items: center;
   justify-content: center;
-  background-color: #34495e;
+  background-color: rgba(52, 73, 94, 0.1921568627);
 }
 nav img {
   height: 200px;
@@ -82,13 +82,13 @@ nav .navMenu li {
 }
 .content .cLeft {
   min-width: 690px;
-  background-color: #34495e;
+  background-color: rgba(52, 73, 94, 0.1921568627);
   width: 70%;
   display: flex;
   flex-direction: column;
 }
 .content .cLeft .article {
-  border-bottom: 1px #e4f1fe solid;
+  border-bottom: 1px rgba(228, 241, 254, 0.1647058824) solid;
   align-items: center;
   display: flex;
 }
@@ -109,7 +109,7 @@ nav .navMenu li {
   margin-top: 10px;
   display: flex;
   padding-bottom: 10px;
-  border-bottom: 1px #e4f1fe solid;
+  border-bottom: 1px rgba(228, 241, 254, 0.1647058824) solid;
 }
 .content .cLeft .dArticle h3 {
   -webkit-margin-before: 0px;
@@ -120,26 +120,26 @@ nav .navMenu li {
   display: flex;
   width: 70%;
   font-size: 14px;
-  border-right: 1px #e4f1fe solid;
+  border-right: 1px rgba(228, 241, 254, 0.1647058824) solid;
 }
 .content .cLeft .dArticle .left img {
   padding: 10px;
   width: 200px;
 }
 .content .cLeft .dArticle .right {
-  background-color: #34495e;
+  background-color: rgba(52, 73, 94, 0.1921568627);
   display: flex;
   width: 30%;
 }
 .content .cLeft .dArticle .right img {
   width: 90%;
-  padding: 0px 30 30px 30px;
+  margin: auto;
 }
 .content .cLeft .dArticle2 {
   margin-top: 10px;
   display: flex;
   padding-bottom: 10px;
-  border-bottom: 1px #e4f1fe solid;
+  border-bottom: 1px rgba(228, 241, 254, 0.1647058824) solid;
 }
 .content .cLeft .dArticle2 h3 {
   -webkit-margin-before: 0px;
@@ -148,7 +148,7 @@ nav .navMenu li {
 .content .cLeft .dArticle2 .left {
   display: flex;
   width: 30%;
-  border-right: 1px #e4f1fe solid;
+  border-right: 1px rgba(228, 241, 254, 0.1647058824) solid;
 }
 .content .cLeft .dArticle2 .left img {
   width: 90%;
@@ -157,7 +157,7 @@ nav .navMenu li {
 .content .cLeft .dArticle2 .right {
   -webkit-margin-before: 0;
           margin-block-start: 0;
-  background-color: #34495e;
+  background-color: rgba(52, 73, 94, 0.1921568627);
   flex-direction: row;
   display: flex;
   width: 70%;
@@ -168,14 +168,14 @@ nav .navMenu li {
   width: 200px;
 }
 .content .cLeft .articleText {
-  border-bottom: 1px #e4f1fe solid;
+  border-bottom: 1px rgba(228, 241, 254, 0.1647058824) solid;
 }
 .content .cRight {
   min-width: 295px;
   width: 30%;
   display: flex;
   flex-direction: column;
-  background-color: #304253;
+  background-color: rgba(48, 66, 83, 0.2745098039);
   align-items: center;
   justify-content: center;
 }
