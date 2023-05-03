@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+body {
+    font-family: "Lora", serif;
+}
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.deals {
+    display: flex;
+    width: 67%;
+    flex-wrap: wrap;
+}
+.box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+.spaceBetweenContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+button {
+    height: 60px;
+    border: none;
+    outline: none;
+    background-color: rgb(61, 61, 61);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(47, 47, 47);
+}
+h3 {
+    height: 22px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+.headings {
+    height: 38px;
+}
+/* Deals */
+.gardena {
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(rgb(2, 176, 2), rgb(100, 246, 100));
+    margin-bottom: 16px;
+}
+.sprungmenu {
+    justify-self: start;
+    align-self: flex-start;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+.sprungmenu a:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
+.country {
+    background: linear-gradient(yellow, rgb(158, 158, 0));
+    height: 230px;
+    width: 49%;
+}
+.hammer {
+    background: linear-gradient(rgb(0, 187, 255), rgb(20, 141, 175));
+    height: 230px;
+    width: 49%;
+}
+/* Angebote */
+.angebote {
+    display: flex;
+    width: 30%;
+    flex-wrap: wrap;
+}
+.prospekt {
+    background-color: rgb(144, 115, 80);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.gruenlander {
+    background-color: rgb(25, 138, 25);
+    height: 180px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.famiele {
+    background-color: aqua;
+    height: 230px;
+    width: 48%;
+}
+.wagner {
+    background-color: rgb(232, 47, 47);
+    height: 230px;
+    width: 48%;
+}
+/* Produktvorschau */
+.produkte {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.produkt:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.produktText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.titel {
+    font-size: 1.2rem;
+}
+.lager {
+    color: lime;
+    font-style: italic;
+}
+img {
+    width: 340px;
+    height: 340px;
+}
+.preiz::after {
+    content: "€";
+}
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+    .deals {
+        width: 100%;
+    }
+    .angebote {
+        width: 100%;
+    }
+    .prospekt {
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 560px) {
+    .container {
+        flex-direction: column;
+    }
+    .deals,
+    .angebote,
+    .box {
+        width: 100%;
+    }
+    .spaceBetweenContainer {
+        flex-wrap: wrap;
+    }
+    .gardena,
+    .gruenlander,
+    .prospekt {
+        margin: 0;
+    }
+}
