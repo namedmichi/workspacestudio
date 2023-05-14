@@ -1,0 +1,25 @@
+body {
+    overflow-x: hidden;
+}
+.fakeimgz {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.full {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.pad {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.margBottom {
+    margin-bottom: 45px !important;
+}
+.footer {
+    padding: 25px !important;
+}
