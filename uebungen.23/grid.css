@@ -1,27 +1,11 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 30px auto auto auto auto 30px;
-  padding: 10px;
-  row-gap: 10px;
-  column-gap: 10px;
-  text-align: center;
-  background-color: lightgreen;
+.grid-container2 {
+    display: grid;
+    grid-gap: 10px;
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
 }
-.grid-item{
-  background-color: rgb(244, 244, 244);
-}
-.item1{
-  grid-area: 1/ 1/ 2/ 7;
-}
-.item3{
-  grid-area: 2 / 6 / 4 / 7;
-}
-.item4{
-  grid-area: 6                  / 1                  / span 1                   / span 2;
-}
-.itemM{
-  grid-area: 2/2/span 4/ span 4;
-}
-.itemB{
-  grid-area: 6/1/span 1/span 2;
+.grid-container2 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
 }

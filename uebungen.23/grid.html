@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="grid.css">
-</head>
-<body>
-    <div class="grid-container">
-        <div class="grid-item item1">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item itemM ">3</div>
-        <div class="grid-item item3">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item ">1</div>
-        <div class="grid-item itemB">2</div>
-        <div class="grid-item ">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        
-        
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="grid.css" />
+    </head>
+    <body>
+        <div
+            class="grid-container2"
+            style="grid-template-columns: auto auto auto auto auto auto"
+        >
+            <div style="grid-area: 1/1/2/7; background-color: #ffffff">
+                <h3>A</h3>
+                <p>
+                    Element A beginnt in Zeilenlinie 1 und in Spaltenlinie 1 und
+                    endet in Zeilenlinie 2 und Spaltenlinie 7.
+                </p>
+            </div>
+            <div><h3>B</h3></div>
+            <div style="grid-area: 2/2/5/6; background-color: #ffffff">
+                <h3>Element H Hauptinhalt</h3>
+                <p>
+                    Element H beginnt in Zeilenlinie 2 und in Spaltenlinie 2 und
+                    endet in Zeilenlinie 6 und Spaltenlinie 6.
+                </p>
+            </div>
+            <div style="grid-area: 2/6/4/7; background-color: #ffffff">
+                <h3>C</h3>
+            </div>
+            <div><h3>D</h3></div>
+            <div><h3>E</h3></div>
+            <div><h3>F</h3></div>
+
+            <div style="grid-area: 5/1 / 7 / 7; background-color: #ffffff">
+                <h3>J</h3>
+                <h3>K</h3>
+            </div>
+        </div>
+    </body>
 </html>

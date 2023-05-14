@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+body {
+    --main-background: hsl(222, 26%, 31%);
+    --toggle-background: hsl(223, 31%, 20%);
+    --screen-background: hsl(224, 36%, 15%);
+    --key-background: hsl(225, 21%, 49%);
+    --key-shadow: hsl(224, 28%, 35%);
+
+    --Red: hsl(6, 63%, 50%);
+    --Dark-red: hsl(6, 70%, 34%);
+
+    --Light-grayish-orange: hsl(30, 25%, 89%);
+    --Grayish-orange: hsl(28, 16%, 65%);
+
+    --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --White: hsl(0, 0%, 100%);
+    background-color: var(--main-background);
+    overflow-x: hidden;
+    font-family: "League Spartan", sans-serif;
+}
+.wrapper {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    max-width: 700px;
+}
+.top {
+    display: flex;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+.left {
+    padding-left: 1rem;
+}
+.result {
+    height: 124px;
+    background-color: var(--screen-background);
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.resultenummber {
+    margin-right: 20px;
+    font-size: 3rem;
+}
+.calculatorContainer {
+    background-color: var(--toggle-background);
+    padding: 30px;
+    border-radius: 20px;
+}
+.calculator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.number {
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 63px;
+    background-color: var(--Light-grayish-orange);
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.clear {
+    cursor: pointer;
+    font-size: 1.8rem;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: var(--key-background);
+}
+.equal {
+    cursor: pointer;
+    font-size: 1.8rem;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: var(--Red);
+}
+.number:hover {
+    background-color: rgba(255, 255, 255, 0.363);
+}
+.equal:hover {
+    background-color: hsl(6, 74%, 32%);
+}
+.clear:hover {
+    background-color: hsl(225, 28%, 44%);
+}
