@@ -22,6 +22,6 @@ echo $htmlChars $htmlWords $htmlLines ";"  >> CounterFile.txt;
 echo $cssChars $cssWords $cssLines ";"  >> CounterFile.txt;
 echo $jsChars $jsWords $jsLines ";"  >> CounterFile.txt;
 echo $tsChars $tsWords $tsLines ";"  >> CounterFile.txt;
-echo "Am "$(date +"%c") >> CounterFile.txt;
-echo "----------------" >> CounterFile.txt;
+echo "Am "$(date +"%c") ";" >> CounterFile.txt;
+echo "----------------;" >> CounterFile.txt;
 exit 0

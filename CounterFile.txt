@@ -1,12 +1,12 @@
-269109 total Chars 20461 total Words 6418 total Lines html ;
-328679 total Chars 10266 total Words 5445 total Lines css ;
-17548 total Chars 1536 total Words 532 total Lines javascript ;
-15955 total Chars 1469 total Words 586 total Lines typescript ;
-Am Mon May 15 11:34:27 2023
-----------------
 263923 total Chars 20467 total Words 6421 total Lines html ;
 323505 total Chars 10285 total Words 5454 total Lines css ;
 18830 total Chars 1707 total Words 596 total Lines javascript ;
 15891 total Chars 1469 total Words 586 total Lines typescript ;
-Am Mon May 15 11:53:30 2023
-----------------
+Am Mon May 15 11:53:30 2023;
+----------------;
+269214 total Chars 20467 total Words 6421 total Lines html ;
+328846 total Chars 10285 total Words 5454 total Lines css ;
+19426 total Chars 1707 total Words 596 total Lines javascript ;
+15955 total Chars 1469 total Words 586 total Lines typescript ;
+Am Mon, May 15, 2023 3:44:37 PM ;
+----------------;
