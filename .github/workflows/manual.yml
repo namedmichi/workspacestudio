@@ -32,7 +32,6 @@ jobs:
         run: bash getCounter.sh
       - name: setup Github1
         run: |
-            hub config --global hub.protocol https
             git config --global user.email "j.technology@web.de"
             git config --global user.name "namedmichi"
             export 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=$token
