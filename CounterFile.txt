@@ -1,0 +1,6 @@
+269109 total Chars 20461 total Words 6418 total Lines html ;
+328679 total Chars 10266 total Words 5445 total Lines css ;
+17548 total Chars 1536 total Words 532 total Lines javascript ;
+15955 total Chars 1469 total Words 586 total Lines typescript ;
+Am Mon May 15 11:34:27 2023
+----------------
