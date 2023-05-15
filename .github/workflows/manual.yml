@@ -32,6 +32,7 @@ jobs:
         run: bash getCounter.sh
       - name: setup Github1
         run: |
+            git config --global credential.helper 'cache --timeout 3600'
             hub config --global hub.protocol https
             hub config --global user.email "j.technology@web.de"
             hub config --global user.name "namedmichi"
