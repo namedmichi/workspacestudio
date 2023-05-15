@@ -37,13 +37,8 @@ jobs:
             hub config --global user.name "namedmichi"
             export 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=$token
             hub remote set-url origin https://$token:x-oauth-basic@github.com/$username/$repo.git
-      - name: check for changes
-        run: git status
-      - name: stage changed files
-        run: git add .
-      - name: commit changed files
-        run: git commit -m "update Stats"
-      - name: fetch from master
-        run: git fetch origin master
-      - name: push code to master
-        run: git push origin HEAD:master
+            git status
+            git add .
+            git commit -m "update Stats"
+            git fetch origin master
+            git push origin HEAD:master
