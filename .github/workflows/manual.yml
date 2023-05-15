@@ -33,8 +33,8 @@ jobs:
       - name: setup Github1
         run: |
             hub config --global hub.protocol https
-            hub config --global git.email "j.technology@web.de"
-            hub config --global git.name "namedmichi"
+            git config --global user.email "j.technology@web.de"
+            git config --global user.name "namedmichi"
             export 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=$token
             hub remote set-url origin https://github.com/namedmichi/workspacestudio
             hub status
