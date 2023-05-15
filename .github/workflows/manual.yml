@@ -36,6 +36,10 @@ jobs:
         run: git config --global user.name "namedmichi"
       - name: setup Github3
         run: git config --global user.password  "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"
+      - name: setup Github4
+        run: hub remote set-url origin https://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:x-oauth-basic@github.com/$username/$repo.git
+      - name: setup Github5
+        run: hub remote set-url upstream https://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:x-oauth-basic@github.com/$owner/$repo.git
       - name: check for changes
         run: git status
       - name: stage changed files
