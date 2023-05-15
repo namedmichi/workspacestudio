@@ -16,7 +16,7 @@ var cssLines;
 var tsLines;
 
 var jsLines;
-fetch('counterFile.txt')
+fetch('CounterFile.txt')
 	.then((response) => response.text())
 	.then((text) => (counterText = text))
 	.then((text) => {
