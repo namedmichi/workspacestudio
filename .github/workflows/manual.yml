@@ -34,6 +34,8 @@ jobs:
         run: git config --global user.email "j.technology@web.de"
       - name: setup Github2
         run: git config --global user.name "namedmichi"
+      - name: setup Github3
+        run: git config --global user.password  "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"
       - name: check for changes
         run: git status
       - name: stage changed files
