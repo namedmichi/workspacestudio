@@ -4,3 +4,9 @@
 15955 total Chars 1469 total Words 586 total Lines typescript ;
 Am Mon May 15 11:34:27 2023
 ----------------
+263923 total Chars 20467 total Words 6421 total Lines html ;
+323505 total Chars 10285 total Words 5454 total Lines css ;
+18830 total Chars 1707 total Words 596 total Lines javascript ;
+15891 total Chars 1469 total Words 586 total Lines typescript ;
+Am Mon May 15 11:53:30 2023
+----------------
