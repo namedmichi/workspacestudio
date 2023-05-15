@@ -28,9 +28,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v1
-      - uses: JamesIves/github-pages-deploy-action@v4.4.0
-        with:
-             token: ${{ secrets.GITHUB_TOKEN }}
       - name: Run a one-line script
         run: bash getCounter.sh
       - name: setup Github1
@@ -40,7 +37,7 @@ jobs:
             hub config --global user.email "j.technology@web.de"
             hub config --global user.name "namedmichi"
             export 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=$token
-            hub remote set-url origin https://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:x-oauth-basic@github.com/namedmichi/workspacestudio
+            hub remote set-url origin https://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:github.com/namedmichi/workspacestudio
             git status
             git add .
             git commit -m "update Stats"
