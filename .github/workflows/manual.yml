@@ -31,15 +31,14 @@ jobs:
       - name: Run a one-line script
         run: bash getCounter.sh
       - name: setup Github1
-        run: git config --global user.email "j.technology@web.de"
-      - name: setup Github2
-        run: git config --global user.name "namedmichi"
-      - name: setup Github3
-        run: git config --global user.password  "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"
-      - name: setup Github4
-        run: hub remote set-url origin https://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:x-oauth-basic@github.com/$username/$repo.git
-      - name: setup Github5
-        run: hub remote set-url upstream https://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:x-oauth-basic@github.com/$owner/$repo.git
+        run: |
+            hub remote set-url upstream https://$token:x-oauth-basic@github.com/$owner/$repo.git
+            hub config --global hub.protocol https
+            hub config --global user.email "j.technology@web.de"
+            hub config --global user.name "namedmichi"
+            export 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=$token
+            hub remote set-url upstream https://$token:x-oauth-basic@github.com/$owner/$repo.git
+            hub remote set-url origin https://$token:x-oauth-basic@github.com/$username/$repo.git
       - name: check for changes
         run: git status
       - name: stage changed files
