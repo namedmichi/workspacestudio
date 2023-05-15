@@ -37,7 +37,6 @@ jobs:
             hub config --global user.email "j.technology@web.de"
             hub config --global user.name "namedmichi"
             export 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=$token
-            hub remote set-url upstream https://$token:x-oauth-basic@github.com/$owner/$repo.git
             hub remote set-url origin https://$token:x-oauth-basic@github.com/$username/$repo.git
       - name: check for changes
         run: git status
