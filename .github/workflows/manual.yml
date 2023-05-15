@@ -32,7 +32,6 @@ jobs:
         run: bash getCounter.sh
       - name: setup Github1
         run: |
-            hub remote set-url upstream https://$token:x-oauth-basic@github.com/$owner/$repo.git
             hub config --global hub.protocol https
             hub config --global user.email "j.technology@web.de"
             hub config --global user.name "namedmichi"
