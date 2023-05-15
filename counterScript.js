@@ -24,10 +24,10 @@ fetch('CounterFile.txt')
 		console.log(counterText);
 		console.log(typeof counterText);
 		var lenght = counterText.length;
-		html = counterText[lenght - 6];
-		css = counterText[lenght - 5];
-		js = counterText[lenght - 4];
-		ts = counterText[lenght - 3];
+		html = counterText[lenght - 7];
+		css = counterText[lenght - 6];
+		js = counterText[lenght - 5];
+		ts = counterText[lenght - 4];
 
 		console.log(html);
 		html = html.split(' ');
