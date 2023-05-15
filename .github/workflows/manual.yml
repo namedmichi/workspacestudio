@@ -37,8 +37,8 @@ jobs:
             git config --global user.name "namedmichi"
             export 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=$token
             git remote set-url origin https://x-access-token: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@github.com/$GITHUB_REPOSITORY
-            hub status
-            hub add .
-            hub commit -m "update Stats"
-            hub fetch origin master
-            hub push origin HEAD:master
+            git status
+            git add .
+            git commit -m "update Stats"
+            git fetch origin master
+            git push origin HEAD:master
