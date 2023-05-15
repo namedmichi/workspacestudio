@@ -34,8 +34,8 @@ jobs:
         run: |
             git config --global user.email "j.technology@web.de"
             git config --global user.name "namedmichi"
-            export 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=$token
-            git remote set-url origin https://x-access-token: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@github.com/$GITHUB_REPOSITORY
+            export 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=$token
+            git remote set-url origin https://x-access-token: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@github.com/$GITHUB_REPOSITORY
             git status
             git add .
             git commit -m "update Stats"
