@@ -1,4 +1,4 @@
-document.getElementById('wetterButton').addEventListener('click', function (e) {
+function getWeather() {
 	const stadt = document.getElementById('stadt').value;
 	fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${stadt}&limit=1&appid=0e4194c846936b540bce21b6b2a47fb9`)
 		.then((response) => response.json())
@@ -14,7 +14,8 @@ document.getElementById('wetterButton').addEventListener('click', function (e) {
 		.then((response) => response.json())
 		.then((data) => {
 			const aktuell = data.current;
-			const vorhersage = data.daily.slice(1, 6); // die nächsten 5 Tage, ohne den heutigen Tag
+			const vorhersage = data.daily.slice(1, 6);
+			const alerts = data.alerts || [];
 
 			let wetterAktuellHTML = `
             <h2>Aktuelles Wetter in ${stadt}</h2>
@@ -24,6 +25,20 @@ document.getElementById('wetterButton').addEventListener('click', function (e) {
 
             <p>Weitere Infos: ${aktuell.weather[0].description}</p>
             `;
+
+			if (alerts.length > 0) {
+				wetterAktuellHTML += `<h3>Wetterwarnungen:</h3>`;
+				alerts.forEach((alert) => {
+					wetterAktuellHTML += `
+                    <div>
+                    <p><strong>${alert.event}</strong></p>
+                    <p>${alert.description}</p>
+                    </div>
+                    `;
+				});
+			} else {
+				wetterAktuellHTML += `<p>Keine Wetterwarnungen vorhanden.</p>`;
+			}
 			document.getElementById('aktuellesWetter').innerHTML = wetterAktuellHTML;
 
 			let wetterVorhersageHTML = `
@@ -62,4 +77,4 @@ document.getElementById('wetterButton').addEventListener('click', function (e) {
 			document.getElementById('aktuellesWetter').innerHTML = `<p>Fehler: ${error.message}</p>`;
 			document.getElementById('wetterTabelle').innerHTML = '';
 		});
-});
+}
