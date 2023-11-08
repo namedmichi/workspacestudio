@@ -1,0 +1,80 @@
+.timeline {
+	display: flex;
+	flex-direction: column;
+	margin-top: 60px;
+	width: fit-content;
+}
+.timeline a {
+	color: white;
+	text-decoration: none;
+}
+.start {
+	align-self: center;
+	padding-bottom: 17px;
+}
+.event {
+	display: flex;
+	width: 500px;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	margin-top: -20px;
+}
+.line {
+	width: 3px;
+	height: 190px;
+	background-color: #0093e9;
+	background-image: linear-gradient(90deg, #0093e9 0%, #80d0c7 100%);
+}
+.date,
+.eventContent {
+	width: 210px;
+	height: 150px;
+	background-color: grey;
+}
+.eventContent {
+	box-sizing: border-box;
+	background: #1f1f1f;
+	box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+	border-radius: 5px;
+	color: white;
+	padding: 8px;
+	overflow-wrap: break-word !important;
+
+	margin-bottom: 20px;
+	border-radius: 6px;
+}
+.date {
+	background-color: unset;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.dateRight {
+	justify-content: flex-start;
+}
+.dot {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-image: linear-gradient(90deg, #0093e9 0%, #80d0c7 100%);
+	position: relative;
+	left: -9px;
+	bottom: -35%;
+}
+.dotStart {
+	top: -30px;
+}
+@media only screen and (max-width: 600px) {
+	.timeline {
+		font-size: 0.9rem;
+	}
+	.event {
+		width: 330px;
+	}
+	.date {
+		width: 130px;
+	}
+	.eventContent {
+		width: 130px;
+	}
+}

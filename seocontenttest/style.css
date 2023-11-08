@@ -1,0 +1,10 @@
+.sonderzeichenContainer {
+	border: black 1px solid;
+	padding: 15px;
+	width: 60px;
+	height: 175px;
+	overflow-y: scroll;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
