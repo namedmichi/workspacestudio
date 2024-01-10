@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Klausur JavaScript</title>
+		<style type="text/css">
+			table,
+			td,
+			th {
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body style="padding: 20px">
+		<h1>Klausur JavaScript</h1>
+		<p>Achte auf eine saubere Verschachtelung des Codes und kommentiere ausreichend.</p>
+		<img id="forelle" src="bachforelle.jpg" width="auto" height="300" style="margin-right: 20px" />
+		<img id="karpfen" src="spiegelkarpfen.jpg" width="auto" height="300" style="margin-right: 20px" />
+		<p><strong>Ausgabe Vor- und Nachname: </strong><span id="ausgabeName"></span></p>
+		<p><strong>Ausgabe Forelle: </strong><span id="ausgabeForelle"></span></p>
+		<p><strong>Ausgabe Karpfen: </strong><span id="ausgabeKarpfen"></span></p>
+		<p><strong>Ausgabe Tabelle: </strong><span id="ausgabeTabelle"></span></p>
+		<script>
+			/*
+		Gib Deinen Vor- und Nachnamen in der entsprechenden Zeile hinter dem Doppelpunkt aus.
+		*/
+
+			document.getElementById('ausgabeName').innerHTML = 'Michael Selbertinger';
+
+			/*
+		1. Definiere ein Objekt mit dem Namen "bachforelle",
+		mit folgenden Eigenschaften inkl. String-Werten:
+		Name: Bachforelle
+		Art: Salmoniden
+		Größe: 40cm
+		Schonzeit: Winter
+		Lebensraum: Bergbäche
+		
+		Definiere ein weiteres Objekt mit dem Namen "spiegelkarpfen"
+		mit folgenden Eigenschaften inkl. String-Werten:
+		Name: Spiegelkarpfen
+		Art: Karpfenartige
+		Größe: 60cm
+		Schonzeit: Herbst
+		Lebensraum: Seen
+		*/
+			// 10 Punkte
+			// Schreibe den Code:
+
+			bachforelle = {
+				Name: 'Bachforelle',
+				Art: 'Salmoniden',
+				Größe: '40cm',
+				Schonzeit: 'Winter',
+				Lebensraum: 'Bergbäche',
+			};
+
+			spiegelkarpfen = {
+				Name: 'Spiegelkarpfen',
+				Art: 'Karpfenartige',
+				Größe: '60cm',
+				Schonzeit: 'Herbst',
+				Lebensraum: 'Seen',
+			};
+
+			/*
+		2. Gib die String-Länge vom Wert der Objekt-Eigenschaft "Art" aus.
+		Das Ergebnis soll erscheinen, wenn man mit der Maus über 
+		das Bild des gezeigten Fisches fährt. Jeweils einmal für Forelle und Karpfen.
+		Das Ergebnis muss dabei in der selben Zeile hinter dem Doppelpunkt stehen, 
+		wie z.B. der String "Ausgabe Forelle:" oder "Ausgabe Karpfen:".
+		
+		Folgende Reihenfolge:
+		Zuerst soll stehen: "Das Wort "
+		Danach soll der Wert der Eigenschaft "Art" ausgegeben werden
+		Dann kommt " enthält"
+		Dann kommt die String-Länge von "Art"
+		Danach soll stehen: " Buchstaben" 
+		
+		Ergebnis: Das Wort Salmoniden enthält 10 Buchstaben. 
+		Ergebnis: Das Wort Karpfenartige enthält 13 Buchstaben.
+		*/
+			// 20 Punkte
+			// Schreibe den Code:
+
+			forelle = document.getElementById('forelle');
+			karpfen = document.getElementById('karpfen');
+
+			forelle.addEventListener('mouseover', function () {
+				document.getElementById('ausgabeForelle').innerHTML =
+					'Das Wort ' + bachforelle.Art + ' enthält ' + bachforelle.Art.length + ' Buchstaben.';
+			});
+
+			karpfen.addEventListener('mouseover', function () {
+				document.getElementById('ausgabeKarpfen').innerHTML =
+					'Das Wort ' + spiegelkarpfen.Art + ' enthält ' + spiegelkarpfen.Art.length + ' Buchstaben.';
+			});
+
+			/*
+		3. Definiere ein Array "fische" welches als einzigen Wert das oben erstellte Objekt "bachforelle" enthält.
+		*/
+			// 5 Punkte
+			// Schreibe den Code:
+
+			fische = [bachforelle];
+
+			/* 5 Punkte
+		4. Füge zum dem Array das Objekt "spiegelkarpfen"
+		mittels Befehl nachträglich hinzu:
+		*/
+			// 5 Punkte
+			// Schreibe den Code:
+
+			fische.push(spiegelkarpfen);
+
+			/*
+		5. Erstelle mittels Schleifen und der forEach()-Methode,
+		   eine HTML-Tabelle in welcher:
+
+			a) Ein Tabellenkopf erzeugt wird, der die Namen der Objekt-Eigenschaften in normaler Rechtschreibung enthält.
+			   		Jede Objekt-Eigenschaft steht dabei in einer eigene Tabellen-Zelle.
+			   		Erstelle hierfür auch ein Objekt "tabellenKopf", 
+			   		welches die passenden Namen für den Tabellen-Kopf enthält
+			b) Die Eigenschafts-Werte der beiden Objekte im Array "fische"
+			   jeweils in einzelne Tabellen-Zellen innerhalb einer Tabellen-Reihe darstellt werden
+			c) Die Funktion so geschrieben ist, dass jederzeit
+			   weitere Objekte im Array "fische" aufgenommen werden können
+			   und trotzdem in der Tabelle erscheinen,
+			   wenn das Event neu ausgeführt wird.
+		Die Tabelle soll generiert werden, wenn man mit der Maus
+		aus dem Bild Forelle herausfährt.
+		Das Ergebnis soll nicht in der selben Zeile stehen wie der String "Ausgabe Tabelle:"
+		*/
+			// 50 Punkte
+			// Schreibe den Code:
+
+			forelle.addEventListener('mouseout', function () {
+				document.getElementById('ausgabeTabelle').innerHTML = 'Ausgabe Tabelle:';
+
+				tabellenKopf = {
+					Name: 'Name',
+					Art: 'Art',
+					Größe: 'Größe',
+					Schonzeit: 'Schonzeit',
+					Lebensraum: 'Lebensraum',
+				};
+
+				let table = document.createElement('table');
+				let tableHead = document.createElement('thead');
+				let tableBody = document.createElement('tbody');
+
+				table.appendChild(tableHead);
+				table.appendChild(tableBody);
+
+				let tableHeadRow = document.createElement('tr');
+				tableHead.appendChild(tableHeadRow);
+
+				for (let key in tabellenKopf) {
+					let tableHeadCell = document.createElement('th');
+					tableHeadRow.appendChild(tableHeadCell);
+					tableHeadCell.innerHTML = tabellenKopf[key];
+				}
+
+				fische.forEach(function (fisch) {
+					let tableBodyRow = document.createElement('tr');
+					tableBody.appendChild(tableBodyRow);
+
+					for (let key in fisch) {
+						let tableBodyCell = document.createElement('td');
+						tableBodyRow.appendChild(tableBodyCell);
+						tableBodyCell.innerHTML = fisch[key];
+					}
+				});
+
+				document.getElementById('ausgabeTabelle').appendChild(table);
+			});
+
+			/* 
+		6. Bei Klick auf das Bild vom Spiegelkarpfen, soll dem Array "fische"
+		   ein weiterer Fisch hinzugefügt werden:
+		   Name: Seesaibling
+		   Art: Salmoniden
+		   Größe: 45cm
+		   Schonzeit: Herbst
+		   Lebensraum: Seen
+
+		   Dieser Fisch sollte nun ebenfalls in der Tabelle auftauchen, 
+		   wenn man das Event zum Erzeugen der Tabelle erneut ausführt.
+		*/
+			// 10 Punkte
+			// Schreibe den Code:
+
+			karpfen.addEventListener('click', function () {
+				seesaibling = {
+					Name: 'Seesaibling',
+					Art: 'Salmoniden',
+					Größe: '45cm',
+					Schonzeit: 'Herbst',
+					Lebensraum: 'Seen',
+				};
+
+				fische.push(seesaibling);
+			});
+		</script>
+	</body>
+</html>
